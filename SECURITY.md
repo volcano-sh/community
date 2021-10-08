@@ -8,7 +8,7 @@ to ensure responsible handling of critical issues.
 
 Security vulnerabilities should be handled quickly and sometimes privately. The primary goal of this process is to reduce the total time users are vulnerable to publicly known exploits.
 
-The Product Security Team (PST) is responsible for organizing the entire response including internal communication and external disclosure.
+The [Product Security Team (PST)](https://github.com/volcano-sh/community/blob/master/PST.md) is responsible for organizing the entire response including internal communication and external disclosure.
 
 The initial Product Security Team will consist of all maintainers in the private [volcano-security](volcano-security@googlegroups.com) list. In the future we may decide to have a subset of maintainers work on security response given that this process is time consuming.
 
