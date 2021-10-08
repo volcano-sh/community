@@ -10,7 +10,7 @@ Security vulnerabilities should be handled quickly and sometimes privately. The 
 
 The [Product Security Team (PST)](https://github.com/volcano-sh/community/blob/master/PST.md) is responsible for organizing the entire response including internal communication and external disclosure.
 
-The initial Product Security Team will consist of all maintainers in the private [volcano-security](volcano-security@googlegroups.com) list. In the future we may decide to have a subset of maintainers work on security response given that this process is time consuming.
+The initial Product Security Team will consist of all maintainers in the private [volcano-security](volcano-sig-security@googlegroups.com) list. In the future we may decide to have a subset of maintainers work on security response given that this process is time consuming.
 
 
 ## Disclosures
@@ -19,7 +19,7 @@ The initial Product Security Team will consist of all maintainers in the private
 
 If you find a security vulnerability or any security related issues,
 please DO NOT file a public issue. Do not create a Github issue.
-Instead, send your report privately to [volcano-security@googlegroups.com](volcano-security@googlegroups.com).
+Instead, send your report privately to [volcano-sig-security@googlegroups.com](volcano-sig-security@googlegroups.com).
 Security reports are greatly appreciated and we will publicly thank you for it.
 
 Please provide as much information as possible, so we can react quickly.
@@ -30,7 +30,7 @@ For instance, that could include:
 
 ### Public Disclosure Processes
 
-If you know of a publicly disclosed security vulnerability please IMMEDIATELY email [volcano-security@googlegroups.com](volcano-security@googlegroups.com)
+If you know of a publicly disclosed security vulnerability please IMMEDIATELY email [volcano-sig-security@googlegroups.com](volcano-sig-security@googlegroups.com)
 to inform the Product Security Team (PST) about the vulnerability so we start the patch, release, and communication process.
 
 If possible the PST will ask the person making the public report if the issue can be handled via a private disclosure process
@@ -136,7 +136,7 @@ Before any information from the list is shared with respective members of your
 team required to fix said issue, they must agree to the same terms and only
 find out information on a need-to-know basis.
 
-In the unfortunate event you share the information beyond what is allowed by this policy, you must urgently inform the volcano-security@googlegroups.com mailing list of exactly what information leaked and to whom. A retrospective will take place after the leak so we can assess how to prevent making the same mistake in the future.
+In the unfortunate event you share the information beyond what is allowed by this policy, you must urgently inform the volcano-sig-security@googlegroups.com mailing list of exactly what information leaked and to whom. A retrospective will take place after the leak so we can assess how to prevent making the same mistake in the future.
 
 If you continue to leak information and break the policy outlined here, you
 will be removed from the list.
@@ -175,7 +175,7 @@ distribution should:
 
 ### Requesting to Join
 
-New membership requests are sent to volcano-security@googlegroups.com.
+New membership requests are sent to volcano-sig-security@googlegroups.com.
 
 In the body of your request please specify how you qualify and fulfill each
 criterion listed in [Membership Criteria](#membership-criteria).
