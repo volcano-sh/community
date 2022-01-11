@@ -8,6 +8,7 @@ This document gives a brief overview of the Volcano community roles with the req
 | Role | Requirements | Responsibilities | Privileges |
 | -----| ---------------- | ------------ | -------|
 | [Member](#member) | Sponsor from 2 approvers, active in community, contributed to Volcano | Welcome and guide new contributors | Volcano GitHub organization Member |
+| [Reivewer](#reviewer) | Sponsor from 2 maintainers, has basic experience and knowledge of domain, actively contributed to code and review | Review contributions from community members | Write access to specific packages in relevant repository |
 | [Approver](#approver) | Sponsor from 2 maintainers, has good experience and knowledge of domain, actively contributed to code and review  | Review and approve contributions from community members | Write access to specific packages in relevant repository |
 | [Maintainer](#maintainer) | Sponsor from 2 owners, shown good technical judgement in feature design/development and PR review | Participate in release planning and feature development/maintenance | Top level write access to relevant repository. Name entry in Maintainers file of the repository |
 | [Owner](#owner) | Sponsor from 3 owners, helps drive the overall Volcano project | Drive the overall technical roadmap of the project and set priorities of activities in release planning | Volcano GitHub organization Admin access |
@@ -41,6 +42,26 @@ reviewing issues/PRs or participate in community discussions on slack/mailing li
 - Guide new contributors to relevant docs/files
 - Help/Motivate new members in contributing to Volcano
 
+## Reviewer
+
+Reviewers are active members who have basic experience and knowledge of the domain.
+They have actively participated in the issue/PR reviews and have identified relevant issues during review.
+
+
+### Requirements
+
+- Sponsor from 2 maintainers
+- Member for at least 2 months
+- Have reviewed good number of PRs
+- Have good codebase knowledge
+
+
+### Responsibilities and Privileges
+
+- Review code to maintain/improve code quality
+- Acknowledge and work on review requests from community members
+- Have 'write access' to specific packages inside a repo, enforced via bot
+- Continue to contribute and guide other community members to contribute in Volcano project
 
 ## Approver
 
@@ -51,7 +72,7 @@ They have actively participated in the issue/PR reviews and have identified rele
 ### Requirements
 
 - Sponsor from 2 maintainers
-- Member for at least 2 months
+- Reviewer for at least 2 months
 - Have reviewed good number of PRs
 - Have good codebase knowledge
 
