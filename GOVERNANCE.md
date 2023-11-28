@@ -83,7 +83,7 @@ permits, or a _reasonable_ time frame to allow maintainers to have a chance to v
 
 ## Code of Conduct
 
-The [Volcano Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md) is aligned with the CNCF Code of Conduct.
+The [Volcano Code of Conduct](https://github.com/volcano-sh/community/blob/master/code_of_conduct.md) is aligned with the CNCF Code of Conduct.
 
 ## Credits
 
