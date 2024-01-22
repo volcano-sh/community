@@ -4,6 +4,7 @@
 -   [Before you get started](#before-you-get-started)
     -   [Code of Conduct](#code-of-conduct)
     -   [Community Expectations](#community-expectations)
+    -   [License Compliance Rules](#license-compliance-rules)
 -   [Getting started](#getting-started)
 -   [Your First Contribution](#your-first-contribution)
     -   [Find something to work on](#find-something-to-work-on)
@@ -28,6 +29,13 @@ The goal of the community is to develop a volcano system which is useful for run
 
 - See [Community Membership](./community-membership.md) for a list of various community roles. With gradual contributions, one can move up in the chain.
 
+## License Compliance Rules
+
+Please ensure that you have read the [license compliance rules](./compliance.md#rules)
+
+It specifies that licenses listed in the "restrictions" section cannot be used in the volcano project. Licenses in the "reciprocal_licenses" section can be used but modifications are not permitted.
+
+If you need to use a license that is not included in either section, please open a Pull Requests for discussion.
 
 # Getting started
 
