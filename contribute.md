@@ -39,8 +39,8 @@ If you need to use a license that is not included in either section, please open
 
 # Getting started
 
-- Read the [get started](docs/development/prepare-for-development.md) for developing code for Volcano
-- Read the [setup](docs/development/development.md) for build/deploy instructions.
+- Read the [get started](https://volcano.sh/en/docs/installation/#prerequisites) for developing code for Volcano
+- Read the [setup](https://volcano.sh/en/docs/installation/#install-from-code) for build/deploy instructions.
 
 
 # Your First Contribution
