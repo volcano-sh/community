@@ -35,7 +35,7 @@ If you have any question, feel free to reach out to us in the following ways:
 
 [Mailing List](https://groups.google.com/forum/#!forum/volcano-sh)
 
-[Twitter](https://twitter.com/home)
+[Twitter](https://twitter.com/volcano_sh)
 
 ## Contribute
 
