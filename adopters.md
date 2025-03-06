@@ -29,3 +29,4 @@ please feel free to add yourself into the following list by a pull request. Ther
 | [kt NexR](https://www.ktnexr.com) |[@minyk](https://github.com/minyk), [@dieselnexr](https://github.com/dieselnexr)| Evaluation | spark scheduler of our next cloud native product. |
 | [QTT Bigdata Infra](https://ir.qutoutiao.net/) |[@yuzhaojing](https://github.com/yuzhaojing) | Evaluation | Spark and AI on K8S. |
 | [4paradigm](http://4paradigm.com/) |[@archlitchi](https://github.com/archlitchi) | Evaluation | device-sharing for third-party devices like (GPU,NPU,MLU),etc. |
+| [IFLYTEK](https://www.iflytek.com/) |[@dongjiang1989]([https://github.com/archlitchi](https://github.com/dongjiang1989)) | Production | Scheduler & Job Management & JobFlow Management on K8s,etc. |
