@@ -4,11 +4,11 @@ This list is used to provide actionable information to multiple distribution ven
 
 ### Embargo Policy
 
-Members of the security [cncf-karmada-distributors-announce@lists.cncf.io](mailto:cncf-karmada-distributors-announce@lists.cncf.io) mailing list must share list information only within their teams, on a need-to-know basis to get the related issue fixed in their distribution. The information members and others receive from the list must not be made public, shared, nor even hinted at otherwise, except with the list's explicit approval. This holds true until the public disclosure date/time that was agreed upon by the list.
+Members of the security [volcano-distributors-announce@lists.cncf.io](mailto:volcano-distributors-announce@lists.cncf.io) mailing list must share list information only within their teams, on a need-to-know basis to get the related issue fixed in their distribution. The information members and others receive from the list must not be made public, shared, nor even hinted at otherwise, except with the list's explicit approval. This holds true until the public disclosure date/time that was agreed upon by the list.
 
 Before any information from the list is shared with respective members of your team required to fix an issue, they must agree to the same terms and only find out information on a need-to-know basis.
 
-In the unfortunate event you share the information beyond what is allowed by this policy, you *must* urgently inform [the Security Team](mailto:cncf-karmada-security@lists.cncf.io) of exactly what information leaked and to whom, as well as the steps that will be taken to prevent future leaks.
+In the unfortunate event you share the information beyond what is allowed by this policy, you *must* urgently inform [the Security Team](mailto:volcano-security@googlegroups.com) of exactly what information leaked and to whom, as well as the steps that will be taken to prevent future leaks.
 
 Repeated offenses may lead to the removal from the distributors list.
 
@@ -28,13 +28,13 @@ Group membership is managed [here](security-groups.md), under the `Distributors 
 
 ### Membership Criteria
 
-To be eligible for the [cncf-karmada-distributors-announce@lists.cncf.io](mailto:cncf-karmada-distributors-announce@lists.cncf.io) mailing list, your distribution should:
+To be eligible for the [volcano-distributors-announce@lists.cncf.io](mailto:volcano-distributors-announce@lists.cncf.io) mailing list, your distribution should:
 
 1. Have an actively monitored security email alias for our project.
 2. Have a user base not limited to your own organization.
 3. Have a publicly verifiable track record up to present day of fixing security issues.
 4. Not be a downstream or rebuild of another distribution.
-5. Be a participant and active contributor in the Karmada community.
+5. Be a participant and active contributor in the Volcano community.
 6. Accept the Embargo Policy that is outlined above.
 7. Be willing to contribute back.
 8. Have someone already on the list vouch for the person requesting membership on behalf of your distribution.
@@ -43,4 +43,4 @@ To be eligible for the [cncf-karmada-distributors-announce@lists.cncf.io](mailto
 
 ### Request to Join
 
-File an issue [here](https://github.com/karmada-io/community/issues/new?template=distributors-application.md), or send an [email](comms-templates/join-announcement-email-list.md), filling in the criteria template.
+File an issue [here](https://github.com/volcano-sh/community/issues/new?template=distributors-application.md), or send an [email](comms-templates/join-announcement-email-list.md), filling in the criteria template.

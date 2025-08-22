@@ -1,4 +1,4 @@
-## Karmada security mailing lists
+## Volcano security mailing lists
 
 File an issue [here](https://github.com/volcano-sh/community/issues/new?template=distributors-application.md), filling in the criteria template to join [volcano-distributors-announce@lists.cncf.io](mailto:volcano-distributors-announce@lists.cncf.io).
 
