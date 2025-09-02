@@ -1,0 +1,69 @@
+name: Organization Membership Request
+description: Request membership in Volcano Org (Member/Reviewer/Approver/Maintainer)
+labels: [ "area/github-membership" ]
+title: "REQUEST: New membership for <your-GH-handle>"
+body:
+- id: github
+  type: input
+  attributes:
+    label: GitHub Username
+    placeholder: e.g. @example_user
+  validations:
+    required: true
+- id: role_requested
+  type: dropdown
+  attributes:
+    label: Membership Level Requested
+    description: Select the membership level you are applying for
+    options:
+      - Member
+      - Reviewer
+      - Approver
+      - Maintainer
+  validations:
+    required: true
+- id: requirements
+  type: checkboxes
+  attributes:
+    label: Requirements
+    options:
+      - label: I have reviewed the [community membership guidelines](https://github.com/volcano-sh/community/blob/master/community-membership.md) and understand the requirements for my requested membership level
+        required: true
+      - label: I have [enabled 2FA on my GitHub account](https://github.com/settings/security)
+        required: true
+      - label: I have subscribed to the [Volcano Mailing List](https://groups.google.com/forum/#!forum/volcano-sh)
+        required: true
+      - label: I am actively contributing to 1 or more Volcano subprojects
+        required: true
+      - label: I have the required number of sponsors that meet the sponsor requirements for my requested role as listed in the community membership guidelines
+        required: true
+      - label: I have spoken to my sponsors ahead of this application, and they have agreed to sponsor my application
+        required: true
+      - label: I have verified that my sponsors meet the requirements for my requested membership level (e.g.,Member requires 2 approvers; Reviewer/Approver requires 2 maintainers) as specified in the community guidelines
+        required: true
+- id: sponsor_1
+  type: input
+  attributes:
+    label: "Sponsor 1"
+    description: GitHub handle of your first sponsor
+    placeholder: e.g. @sponsor-1
+  validations:
+    required: true
+- id: sponsor_2
+  type: input
+  attributes:
+    label: "Sponsor 2"
+    description: GitHub handle of your second sponsor (preferably from a different company than Sponsor 1)
+    placeholder: e.g. @sponsor-2
+  validations:
+    required: true
+- id: contributions
+  type: textarea
+  attributes:
+    label: List of contributions to the Volcano project
+    placeholder: |
+      - PRs reviewed / authored
+      - Issues authored
+      - Issues responded to
+  validations:
+    required: true
