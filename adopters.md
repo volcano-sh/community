@@ -31,3 +31,4 @@ please feel free to add yourself into the following list by a pull request. Ther
 | [4paradigm](http://4paradigm.com/) |[@archlitchi](https://github.com/archlitchi) | Evaluation | device-sharing for third-party devices like (GPU,NPU,MLU),etc. |
 | [IFLYTEK](https://www.iflytek.com/) |[@dongjiang1989](https://github.com/dongjiang1989) | Production | Scheduler & Job Management & JobFlow Management on K8s,etc. |
 | [Kingsoft Cloud](https://www.ksyun.com/) | [@XbaoWu](https://github.com/XbaoWu) | Production | Spark & AI on K8S. |
+| [Momenta](https://www.momenta.cn/) | [@houyuting](https://github.com/houyuting) | Production | Use Volcano to run Big data workloads efficiently with Queue/Volcano job, etc. |
