@@ -81,6 +81,10 @@ create a GitHub Pull Request to call for participation
 from other maintainers. The `Call for Participation` should be kept open for no less than a week if time
 permits, or a _reasonable_ time frame to allow maintainers to have a chance to volunteer.
 
+## Meetings
+
+Volcano does not hold regular scheduled meetings. Maintainers coordinate asynchronously through GitHub issues and pull requests to accommodate different time zones and work schedules. Ad-hoc meetings can be proposed by any maintainer via GitHub issue when synchronous discussion is beneficial. Meeting notes are documented in the relevant issue.
+
 ## Code of Conduct
 
 The [Volcano Code of Conduct](https://github.com/volcano-sh/community/blob/master/code_of_conduct.md) is aligned with the CNCF Code of Conduct.
