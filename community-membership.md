@@ -151,4 +151,6 @@ Has overall knowledge of the project and features in the project.
 - Candidates should not vote for themselves
 - Sponsors/voters from diverse organizations are preferred
 
+**Permissions:** Emeritus Maintainers retain their code review and approval permissions in OWNERS files. This allows them to continue participating at their discretion and return to active status easily. They are not expected to fulfill regular maintainer duties.
+
 [two-factor authentication]: https://help.github.com/articles/about-two-factor-authentication

@@ -81,6 +81,32 @@ create a GitHub Pull Request to call for participation
 from other maintainers. The `Call for Participation` should be kept open for no less than a week if time
 permits, or a _reasonable_ time frame to allow maintainers to have a chance to volunteer.
 
+## Vendor Neutrality
+
+Volcano is an independent open source project committed to vendor neutrality as defined by the CNCF. Project direction is determined by the community and maintainers based on technical merit, not by any single vendor or organization.
+
+**Key Principles:**
+
+- **No single organization controls the project**: No vendor has unilateral decision-making authority over project direction, features, or governance
+- **Multi-organization maintainer base**: Maintainers represent multiple organizations (current affiliations listed in MAINTAINERS.md)
+- **Merit-based decisions**: Technical decisions are based on merit, alignment with project goals, and design principles, not organizational affiliation
+- **Equal contributor rights**: All contributors have equal rights regardless of employer; contributions are evaluated on technical merit
+- **Open path to leadership**: Any contributor can become a maintainer through demonstrated contribution and community trust, as documented in community-membership.md
+- **Consensus-based governance**: Major decisions require consensus among maintainers from different organizations
+- **Transparent processes**: All governance processes, decisions, and discussions happen publicly on GitHub
+
+For more details on CNCF's vendor neutrality principles, see the [CNCF Vendor Neutrality Guidelines](https://contribute.cncf.io/projects/best-practices/community/vendor-neutrality/).
+
+## Decision Making
+
+### Requests to CNCF
+
+For formal requests to the CNCF (such as graduation applications, budget requests, or trademark usage), any maintainer can propose the request via a GitHub issue. Other maintainers review and discuss the proposal. The request proceeds when maintainers reach consensus, and the submission is coordinated by one of the maintainers.
+
+### Modifying Governance
+
+Changes to governance documents (GOVERNANCE.md, community-membership.md, etc.) are proposed via Pull Request with clear rationale and follow the standard PR review process. Changes are merged when approved by maintainers.
+
 ## Meetings
 
 Volcano does not hold regular scheduled meetings. Maintainers coordinate asynchronously through GitHub issues and pull requests to accommodate different time zones and work schedules. Ad-hoc meetings can be proposed by any maintainer via GitHub issue when synchronous discussion is beneficial. Meeting notes are documented in the relevant issue.
