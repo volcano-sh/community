@@ -7,13 +7,13 @@ This is the starting point for joining and contributing to the Volcano community
 
 ## Community Meeting
 
-Regular Community Meeting:
-- Asia Time: **Friday at 15:00-16:00 (UTC+8)** (weekly).
-  ([Convert to your timezone.](https://www.thetimezoneconverter.com/?t=16%3A30&tz=GMT%2B8&))
-- Europe Time: **Thursdays at 11:00-12:00 (UTC+1)** (biweekly).
-  ([Convert to your timezone.](https://www.thetimezoneconverter.com/?t=16%3A30&tz=GMT%2B8&))
-- Pacific Time: **Thursdays at 08:30-09:30 (UTC-8)** (biweekly).
-  ([Convert to your timezone.](https://www.thetimezoneconverter.com/?t=10%3A00&tz=GMT%2B8&))
+Regular Community Meetings:
+- Asia Time: **Fridays at 15:00-16:00 (UTC+8)** (biweekly, from 2021. January 21.).
+  ([Convert to your timezone.](https://dateful.com/time-zone-converter?t=15&tz2=UTC%2B8))
+- Europe Time: **Fridays at 9:00-10:00 (UTC+1)** (biweekly, from 2025. April 18.).
+  ([Convert to your timezone.](https://dateful.com/time-zone-converter?t=9&tz2=UTC%2B1))
+- Pacific Time: **Thursdays at 15:00-16:00 (UTC-8)** (biweekly, from 2025. November 20.).
+  ([Convert to your timezone.](https://dateful.com/time-zone-converter?t=15&tz2=UTC-8))
 
 Resources:
 - [Meeting notes and agenda](https://docs.google.com/document/d/1YLbF8zjZBiR9PbXQPB22iuc_L0Oui5A1lddVfRnZrqs/edit)
