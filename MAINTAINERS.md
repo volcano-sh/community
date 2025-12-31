@@ -13,7 +13,7 @@ Refer to [community-membership.md](https://github.com/volcano-sh/community/blob/
 | Thor-wl              | [Thor-wl](https://github.com/Thor-wl)                   | Hjmicro     |
 | William-wang         | [william-wang](https://github.com/william-wang)         | NVIDIA      |
 | Liang Tang           | [shinytang6](https://github.com/shinytang6)             | Baidu       |
-| Xavier Chang         | [Monokaix](https://github.com/Monokaix)                 | Huawei      |
+| Xavier Chang         | [Monokaix](https://github.com/Monokaix)                 | NVIDIA      |
 
 ## Emeritus
 
