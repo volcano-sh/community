@@ -33,3 +33,4 @@ please feel free to add yourself into the following list by a pull request. Ther
 | [Kingsoft Cloud](https://www.ksyun.com/) | [@XbaoWu](https://github.com/XbaoWu) | Production | Spark & AI on K8S. |
 | [Momenta](https://www.momenta.cn/) | [@houyuting](https://github.com/houyuting) | Production | Use Volcano to run Big data workloads efficiently with Queue/Volcano job, etc. |
 | [Infrawaves](http://infrawaves.com/) | [@buliangjunpp](https://github.com/buliangjunpp) | Production | Leveraging Volcano to run AI/ML workloads efficiently using features like Queues and Volcano Jobs. |
+| [Zoom](https://www.zoom.com/) | [@dafu-wu](chengyi.wu@zoom.com) | Production | Using Volcano to queue/preempt/reclaim jobs in kubeflow. |
