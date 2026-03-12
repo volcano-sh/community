@@ -8,7 +8,7 @@ This document gives a brief overview of the Volcano community roles with the req
 | Role | Requirements | Responsibilities | Privileges |
 | -----| ---------------- | ------------ | -------|
 | [Member](#member) | Sponsor from 2 approvers, active in community, contributed to Volcano | Welcome and guide new contributors | Volcano GitHub organization Member |
-| [Reivewer](#reviewer) | Sponsor from 2 maintainers, has basic experience and knowledge of domain, actively contributed to code and review | Review contributions from community members | Write access to specific packages in relevant repository |
+| [Reviewer](#reviewer) | Sponsor from 2 maintainers, has basic experience and knowledge of domain, actively contributed to code and review | Review contributions from community members | Write access to specific packages in relevant repository |
 | [Approver](#approver) | Sponsor from 2 maintainers, has good experience and knowledge of domain, actively contributed to code and review  | Review and approve contributions from community members | Write access to specific packages in relevant repository |
 | [Maintainer](#maintainer) | Sponsor from 2 maintainers, shown good technical judgement in architecture and evolution of Volcano and PR review | Participate in release planning and feature development/maintenance | Top level write access to relevant repository. Name entry in Maintainers file of the repository |
 
