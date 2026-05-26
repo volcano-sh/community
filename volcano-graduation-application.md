@@ -7,8 +7,8 @@ This template provides the project with a framework to inform the TOC of their c
 
 Project Repo(s): https://github.com/volcano-sh/volcano  
 Project Site: https://volcano.sh/  
-Sub-Projects: https://github.com/volcano-sh/community, https://github.com/volcano-sh/website, https://github.com/volcano-sh/charts, https://github.com/volcano-sh/kubegene  
-Communication: https://cloud-native.slack.com/archives/C07GH14NBLT (#volcano on CNCF Slack)
+Sub-Projects: https://github.com/volcano-sh/community, https://github.com/volcano-sh/website, https://github.com/volcano-sh/charts, https://github.com/volcano-sh/kthena, https://github.com/volcano-sh/agentcube
+Communication: https://cloud-native.slack.com/archives/C011GJDQS0N (#volcano on CNCF Slack)
 
 Project points of contacts: Klaus Ma, k82cn@gmail.com; Kevin Wang, kevin.wang@huawei.com
 
@@ -53,7 +53,7 @@ Volcano has seen wide adoption across numerous industries globally, including In
 <!-- TODO: Complete a GTR and link the results here. -->
 
 - [ ] **Complete a [Governance Review](https://github.com/cncf/toc/blob/main/toc_subprojects/project-reviews-subproject/governance-review-template.md).**
-  - This was most recently revised on <!-- TODO: add date -->, and can be discovered at <!-- TODO: add link -->.
+  - This was most recently revised on <!-- TODO: add date -->, and can be discovered at <!-- TODO: add link -->. TODO: we should write the first revision and put it under
 
 <!-- TODO: Complete a Governance Review and link the results here. -->
 
@@ -67,7 +67,7 @@ Volcano has seen wide adoption across numerous industries globally, including In
   - [Governance documentation](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md) explicitly states that no single vendor can dominate project direction; maintainers represent NVIDIA, Huawei, Baidu, and Hjmicro
 
 - [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**
-   - [x] Met during Project's Sandbox application on Apr 2020 and Incubation application on Apr 2022.
+  - [x] Met during Project's Sandbox application on Apr 2020 and subsequent move to incubating in 2021/08/30 through PR [#712](https://github.com/cncf/toc/pull/712)
 
 <!-- Volcano has been compliant with CNCF expectations since joining as a Sandbox project and has grown steadily to meet incubation and graduation criteria. -->
 
@@ -95,8 +95,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - Initial governance established at Sandbox entry (Apr 2020)
   - Community membership ladder formalized with Member, Approver, Maintainer, and Owner roles: [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md)
   - Security response team and private disclosure process formalized in [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md)
-  - Emeritus process for inactive maintainers added and exercised (see Emeritus section in MAINTAINERS.md)
-  - Subproject acceptance criteria documented in GOVERNANCE.md
+  - Emeritus process for inactive maintainers added and exercised (see [Emeritus section in MAINTAINERS.md](https://github.com/volcano-sh/community/blob/main/MAINTAINERS.md#emeritus))
+  - Subproject acceptance criteria documented in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#other-projects)
 
 ### Required
 
@@ -108,12 +108,12 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
   - Maintainer list is up to date in [MAINTAINERS.md](https://github.com/volcano-sh/community/blob/main/MAINTAINERS.md)
-  - Community meetings are held regularly and announced via [community repo](https://github.com/volcano-sh/community)
-  - PRs and issues are used to propose and approve all governance changes transparently
+  - Community meetings are held regularly and announced via [community repo](https://github.com/volcano-sh/community#community-meeting)
+  - PRs and issues are used to propose and approve all governance changes transparently TODO: add pr links when the new update to governance is made
 
 - [x] **Governance clearly documents [vendor-neutrality](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
-  The [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md) states that:
+  The [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/master/GOVERNANCE.md) states that:
   - Decision making is consensus-based and transparent
   - All proposals, ideas, and decisions happen via public GitHub issues or PRs
   - Maintainers currently represent 4 different companies (NVIDIA, Huawei, Baidu, Hjmicro), preventing single-vendor dominance
@@ -126,8 +126,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
-  - Security response: the Product Security Team (PST) is defined in [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md) and consists of all current maintainers plus members of the private `volcano-security` Google Group
-  - Role assignment for Member/Approver/Maintainer/Owner follows the documented ladder in [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md)
+  - Security response: the Security Team is defined in [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md) and consists of all current maintainers plus members of the private `volcano-security` Google Group
+  - Role assignment for Member/Approver/Maintainer follows the documented ladder in [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md)
 
 - [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
@@ -137,31 +137,20 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
 
-  - New maintainers have been added as the project grew (e.g., Xavier Chang from NVIDIA, Jesse Stutler from Huawei, Liang Tang from Baidu)
-  - Former maintainers (Quinton Hoole/Facebook, Animesh Singh/IBM, Jun Gong/Tencent) transitioned to Emeritus status, demonstrating healthy lifecycle management
+  - New maintainers have been added as the project grew (e.g., Xavier Chang from NVIDIA https://github.com/volcano-sh/community/issues/78)
+  - Former maintainers (Quinton Hoole/Facebook, Animesh Singh/IBM, Jun Gong/Tencent) transitioned to Emeritus status, demonstrating healthy lifecycle management. https://github.com/volcano-sh/community/blob/master/MAINTAINERS.md#emeritus
 
 - [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-  | Maintainer     | GitHub ID                                                       | Affiliation |
-  |----------------|-----------------------------------------------------------------|-------------|
-  | Klaus Ma       | [@k82cn](https://github.com/k82cn)                             | NVIDIA      |
-  | Kevin Wang     | [@kevin-wangzefeng](https://github.com/kevin-wangzefeng)       | Huawei      |
-  | Zhonghu Xu     | [@hzxuzhonghu](https://github.com/hzxuzhonghu)                 | Huawei      |
-  | Thor-wl        | [@Thor-wl](https://github.com/Thor-wl)                         | Hjmicro     |
-  | William Wang   | [@william-wang](https://github.com/william-wang)               | NVIDIA      |
-  | Liang Tang     | [@shinytang6](https://github.com/shinytang6)                   | Baidu       |
-  | Xavier Chang   | [@Monokaix](https://github.com/Monokaix)                       | NVIDIA      |
-  | Jesse Stutler  | [@JesseStutler](https://github.com/JesseStutler)               | Huawei      |
-
-  Full list with contact info: https://github.com/volcano-sh/community/blob/main/MAINTAINERS.md
+  - The [maintainer's list](https://github.com/volcano-sh/community/blob/main/MAINTAINERS.md) on our website draws from GitHub and documents all members and their roles.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
-  Volcano has 8 active maintainers across multiple organizations. The project has 5,400+ GitHub stars, 1,300+ forks, and hundreds of contributors across code, docs, and reviews. This maintainer count is appropriate for the project's scope and activity level.
+  Volcano has 8 active maintainers across multiple organizations. The project has 5,400+ GitHub stars, 1,300+ forks, and hundreds of contributors across code, docs, and reviews. We also have approvers for each subproject. This maintainer and approver count is appropriate for the project's scope and activity level.
 
 - [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
-  Current maintainers represent 4 independent organizations: NVIDIA, Huawei, Baidu, and Hjmicro. No single organization holds a majority (NVIDIA: 3, Huawei: 3, Baidu: 1, Hjmicro: 1).
+  Current [maintainers](https://github.com/volcano-sh/community/blob/main/MAINTAINERS.md) represent 4 independent organizations: NVIDIA, Huawei, Baidu, and Hjmicro. No single organization holds a majority (NVIDIA: 3, Huawei: 3, Baidu: 1, Hjmicro: 1).
 
 - [x] **Code and Doc ownership in GitHub and elsewhere matches documented governance roles.**
 
@@ -170,24 +159,35 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
 
-  - Volcano explicitly adopts the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md) as documented in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#code-of-conduct) and [code_of_conduct.md](https://github.com/volcano-sh/volcano/blob/master/code_of_conduct.md)
+  - Volcano explicitly adopts the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md) as documented in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#code-of-conduct) and [CODE_OF_CONDUCT.md](https://github.com/volcano-sh/community/blob/master/CODE_OF_CONDUCT.md)
 
 - [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
-  - Linked from GOVERNANCE.md, community-membership.md, and individual repository READMEs
+  - Code of Conduct is referenced in the [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#code-of-conduct).
 
 - [x] **All subprojects, if any, are listed.**
 
   Subprojects under the `volcano-sh` organization:
-  - [volcano](https://github.com/volcano-sh/volcano) – Core batch scheduling system
-  - [website](https://github.com/volcano-sh/website) – Project website
-  - [charts](https://github.com/volcano-sh/charts) – Helm charts for deployment
+  - [kthena](https://github.com/volcano-sh/kthena) – Kubernetes-native AI serving platform for scalable model serving
+  - [agentcube](https://github.com/volcano-sh/agentcube) – Agent orchestration platform
+  - [volcano-global](https://github.com/volcano-sh/volcano-global) – Federation scheduler for multi-cluster
+  - [apis](https://github.com/volcano-sh/apis) – API (CRD) definitions for Volcano
+  - [devices](https://github.com/volcano-sh/devices) – Device plugins for Volcano (e.g. GPU)
+  - [dashboard](https://github.com/volcano-sh/dashboard) – Web dashboard for Volcano
+  - [descheduler](https://github.com/volcano-sh/descheduler) – Volcano Descheduler
+  - [resource-exporter](https://github.com/volcano-sh/resource-exporter) – Resource exporter for NUMA-aware scheduling
+  - [helm-charts](https://github.com/volcano-sh/helm-charts) – Helm chart repository
+  - [website](https://github.com/volcano-sh/website) – Project website and documentation
   - [community](https://github.com/volcano-sh/community) – Community governance and documentation
   - [kubegene](https://github.com/volcano-sh/kubegene) – Gene sequencing workflow engine on Kubernetes
+  - [kubegene-website](https://github.com/volcano-sh/kubegene-website) – KubeGene website
 
 - [x] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
-  Subproject acceptance criteria are documented in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#other-projects). Each subproject must be Apache 2.0 licensed, related to the Volcano ecosystem, and supported by a maintainer not affiliated with the subproject's author(s).
+  - According to [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md), sub-projects can have their own repositories but follow the same governance mechanism as the main project.
+  add/remove process: https://github.com/karmada-io/community/blob/main/GOVERNANCE.md#subprojects
+  
+  TODO: update governance 
 
 ## Contributors and Community
 
@@ -197,7 +197,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Contributor ladder with multiple roles for contributors.**
 
-  Volcano has a four-level contributor ladder: Member → Approver → Maintainer → Owner, each with documented requirements, responsibilities, and privileges. See [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md).
+  Volcano has a three-level contributor ladder: Member → Approver → Maintainer, each with documented requirements, responsibilities, and privileges. See [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md).
 
 ### Required
 
@@ -205,39 +205,42 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   - Issues: filed via GitHub Issues at https://github.com/volcano-sh/volcano/issues
   - Changes: submitted via Pull Requests following the workflow in [contribute.md](https://github.com/volcano-sh/volcano/blob/master/contribute.md)
-  - Design proposals: submitted as GitHub Issues or docs in the community repo
 
 - [x] **Project must have, and document, at least one public communications channel for users and/or contributors.**
-
-  - CNCF Slack: [#volcano](https://cloud-native.slack.com/archives/C07GH14NBLT)
+  Volcano has the following public communications channel for users and contributors documented in the [Readme.md](https://github.com/volcano-sh/volcano#meeting)
+  - CNCF Slack: [#volcano](https://cloud-native.slack.com/archives/C011GJDQS0N)
+  - Mailing list: [volcano-sh Google Group](https://groups.google.com/forum/#!forum/volcano-sh)
+  - Twitter: [@volcano_sh](https://twitter.com/volcano_sh)
 
 - [x] **List and document all project communication channels, including subprojects (mail list/slack/etc.). List any non-public communications channels and what their special purpose is.**
 
-  Public channels:
-  - Slack: [#volcano](https://cloud-native.slack.com/archives/C07GH14NBLT) on CNCF Slack
-  - GitHub Discussions/Issues: https://github.com/volcano-sh/volcano/issues
-  - Community repo: https://github.com/volcano-sh/community
+  Public channels (documented in [volcano README](https://github.com/volcano-sh/volcano#contact) and [community README](https://github.com/volcano-sh/community#contact)):
+  - Slack: [#volcano](https://cloud-native.slack.com/archives/C011GJDQS0N) on CNCF Slack ([join](https://slack.cncf.io/))
+  - Mailing list: [volcano-sh Google Group](https://groups.google.com/forum/#!forum/volcano-sh)
+  - Twitter: [@volcano_sh](https://twitter.com/volcano_sh)
+  - GitHub Issues: https://github.com/volcano-sh/volcano/issues
+  - Community meetings: [meeting info](https://github.com/volcano-sh/volcano#meeting) | [meeting notes and agenda](https://docs.google.com/document/d/1YLbF8zjZBiR9PbXQPB22iuc_L0Oui5A1lddVfRnZrqs/edit) | [Zoom link](https://zoom.us/j/91804791393)
 
   Private channels (purpose: security):
-  - volcano-security@googlegroups.com – private security vulnerability reporting and coordination (PST members only)
-  - volcano-distributors-announce@lists.cncf.io – private advance notification to distributors for security patches
+  - [volcano-security@googlegroups.com](mailto:volcano-security@googlegroups.com) – private security vulnerability reporting and coordination (PST members only). Ref: [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md)
+  - [volcano-distributors-announce@lists.cncf.io](mailto:volcano-distributors-announce@lists.cncf.io) – private advance notification to distributors for security patches. Ref: [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md)
 
 - [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
-  Community meetings are documented in the [community repository](https://github.com/volcano-sh/community) and are open to all contributors. <!-- TODO: confirm CNCF calendar integration link -->
+  Community meetings are held biweekly across three time zones (Asia, Europe) and documented in the [community repository](https://github.com/volcano-sh/community#community-meeting).
+  - [Meeting notes and agenda](https://docs.google.com/document/d/1YLbF8zjZBiR9PbXQPB22iuc_L0Oui5A1lddVfRnZrqs/edit)
+  - [Meeting Calendar](https://calendar.google.com/calendar/b/1/embed?src=volcano.sh.bot@gmail.com) | [Subscribe](https://calendar.google.com/calendar/b/1?cid=dm9sY2Fuby5zaC5ib3RAZ21haWwuY29t)
 
 - [x] **Documentation of how to contribute, with increasing detail as the project matures.**
 
-  - [contribute.md](https://github.com/volcano-sh/volcano/blob/master/contribute.md) – Getting started for new contributors
-  - [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md) – Role progression for ongoing contributors
-  - [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md) – Project-level decision making for experienced contributors
+  - [contribute.md](https://github.com/volcano-sh/volcano/blob/master/contribute.md) provides detailed contribution guidelines.
+  - [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md) – Role progression for ongoing contributors.
 
 - [x] **Demonstrate contributor activity and recruitment.**
 
-  - 500+ total contributors across all repositories
-  - Active PR reviews and issue triage by maintainers and approvers
-  - Regular presentations at KubeCon (2019 EU, 2019 NA, 2021 EU, 2021 China, 2022 EU, 2023 EU, 2023 China, 2024 China) which drive new contributor interest
-  - Integration with major AI/ML frameworks (Spark, Ray, PyTorch, TensorFlow, Kubeflow) expands contributor base across ecosystems
+  - Active community with 471+ contributors on Volcano, 5.8k+ GitHub stars (at the time of this writing), 1.5k members in wechat and 780 members in Slack. There is continuous PR activity and community engagement.
+
+    [LFX Insights](https://insights.linuxfoundation.org/project/Volcano?timeRange=past365days&start=2025-05-26&end=2026-05-26)
 
 ## Engineering Principles
 
@@ -259,11 +262,13 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
+// TODO update roadmap
   Project roadmap is maintained at: https://github.com/volcano-sh/community/blob/main/roadmap.md  
   Release milestones and feature planning are tracked via GitHub Milestones: https://github.com/volcano-sh/volcano/milestones
 
 - [x] **Roadmap change process is documented.**
 
+// TODO： add roadmap change process. in governance.md
   Roadmap changes are proposed via GitHub Issues or PRs in the main repository and require maintainer consensus per the decision-making process in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#decision-making-process).
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
@@ -318,17 +323,19 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
 - [x] **Document assignment of security response roles and how reports are handled.**
 
-  The Product Security Team (PST) is defined in [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md). The PST consists of all maintainers subscribed to the private `volcano-security` Google Group. The Fix Lead role rotates round-robin. Timelines for fix development and public disclosure are documented in SECURITY.md.
+// TODO update security to include these
+  The [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md) documents our response roles, charter, and processes..
 
 - [x] **Document [Security Self-Assessment](https://tag-security.cncf.io/community/assessments/guide/self-assessment/).**
 
   <!-- TODO: link to completed security self-assessment if available, or indicate it is in progress -->
+  -see https://github.com/cncf/tag-security/blob/main/community/assessments/projects/volcano/self-assessment.md
 
-- [ ] **Third Party Security Review.**
+- [x] **Third Party Security Review.**
 
-  - [ ] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings.
-
-  <!-- TODO: initiate or link to third-party security audit. This is a graduation requirement. -->
+  - [x] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings.
+  
+  Volcano has completed a third-party security audit. See: [Volcano 2025 Security Audit](https://volcano.sh/reports/Ada-Logics-Volcano-Security-Audit-2025.pdf)
 
 - [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
