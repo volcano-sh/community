@@ -61,10 +61,10 @@ Volcano has seen wide adoption across numerous industries globally, including In
 
   - Homepage: https://volcano.sh/ (community-branded and managed)
   - GitHub Organization: https://github.com/volcano-sh/ (all repos under the neutral `volcano-sh` org)
-  - Slack: [#volcano](https://cloud-native.slack.com/archives/C07GH14NBLT) on CNCF Slack
-  - Mailing list / Security: volcano-security@googlegroups.com
-  - Community meetings are open and announced via GitHub issues and the community repo
-  - Governance documentation explicitly states that no single vendor can dominate project direction; maintainers represent NVIDIA, Huawei, Baidu, and Hjmicro
+  - Slack: [#volcano](https://cloud-native.slack.com/archives/C011GJDQS0N) on CNCF Slack
+  - Mailing list: https://groups.google.com/g/volcano-sh
+  - Community meetings are open and announced via the [community repo](https://github.com/volcano-sh/community#community-meeting)
+  - [Governance documentation](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md) explicitly states that no single vendor can dominate project direction; maintainers represent NVIDIA, Huawei, Baidu, and Hjmicro
 
 - [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**
    - [x] Met during Project's Sandbox application on Apr 2020 and Incubation application on Apr 2022.
