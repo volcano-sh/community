@@ -24,7 +24,7 @@ Project points of contacts: Klaus Ma, k82cn@gmail.com; Kevin Wang, kevin.wang@hu
 
 _The project has been adopted by the following organizations in a testing and integration or production capacity:_
 
-Volcano has seen wide adoption across numerous industries globally, including Internet/Cloud, Finance, Manufacturing, and Medical sectors. The [official adopters list](https://volcano.sh/en/docs/adopters/) documents organizations running Volcano in production. Notable adopters include:
+Volcano has seen wide adoption across numerous industries globally, including Internet/Cloud, Finance, Manufacturing, and Medical sectors. The [official adopters list](https://github.com/volcano-sh/community/blob/main/adopters.md) documents organizations running Volcano in production. Notable adopters include:
 
 - **Huawei** – Large-scale AI/ML training and inference workloads on Kubernetes
 - **ING Bank** – Big data analytics platform (see [CNCF blog](https://www.cncf.io/blog/2023/02/21/ing-bank-how-volcano-empowers-its-big-data-analytics-platform/))
@@ -40,14 +40,22 @@ Volcano has seen wide adoption across numerous industries globally, including In
 
 ### Suggested
 
-N/A
-
-### Required
-
-- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
+- [ ] **Engage with domain-specific TAG(s) to present the technical architecture of the project.**
   - This is tracked by <!-- TODO: add TAG Workloads/Runtime tracking issue link -->.
 
 <!-- Volcano has presented at multiple KubeCon events and engages with TAG Workloads (formerly TAG App Delivery/Runtime). A General Technical Review with the relevant TAG should be scheduled or confirmed. -->
+
+### Required
+
+- [ ] **Complete a [General Technical Review (GTR)](https://github.com/cncf/toc/blob/main/toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
+  - This was most recently revised on <!-- TODO: add date -->, and can be discovered at <!-- TODO: add link -->.
+
+<!-- TODO: Complete a GTR and link the results here. -->
+
+- [ ] **Complete a [Governance Review](https://github.com/cncf/toc/blob/main/toc_subprojects/project-reviews-subproject/governance-review-template.md).**
+  - This was most recently revised on <!-- TODO: add date -->, and can be discovered at <!-- TODO: add link -->.
+
+<!-- TODO: Complete a Governance Review and link the results here. -->
 
 - [x] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
@@ -251,7 +259,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
-  Project roadmap is maintained at: https://github.com/volcano-sh/volcano/blob/master/docs/design/roadmap.md  
+  Project roadmap is maintained at: https://github.com/volcano-sh/community/blob/main/roadmap.md  
   Release milestones and feature planning are tracked via GitHub Milestones: https://github.com/volcano-sh/volcano/milestones
 
 - [x] **Roadmap change process is documented.**
@@ -337,7 +345,7 @@ N/A
 
 - [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-  Adopters list: https://volcano.sh/en/docs/adopters/  
+  Adopters list: https://github.com/volcano-sh/community/blob/main/adopters.md  
   The list includes organizations across Internet/Cloud, Finance, Manufacturing, and Medical sectors globally.
 
 - [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters (these are not required to be in the publicly documented list of adopters)**
@@ -358,7 +366,7 @@ N/A
   - [Kubeflow Training Operator](https://www.kubeflow.org/docs/components/training/user-guides/job-scheduling/) – Distributed ML training
 
   Non-CNCF project integrations:
-  - [Apache Spark](https://spark.apache.org/docs/3.5.0/running-on-kubernetes.html#using-volcano-as-customized-scheduler-for-spark-on-kubernetes) – Native built-in support since Spark 3.3
+  - [Apache Spark](https://spark.apache.org/docs/latest/running-on-kubernetes.html#using-volcano-as-customized-scheduler-for-spark-on-kubernetes) – Native built-in support since Spark 3.3
   - [Spark Operator](https://www.kubeflow.org/docs/components/spark-operator/user-guide/volcano-integration/)
   - [Apache Flink](https://github.com/GoogleCloudPlatform/flink-on-k8s-operator/blob/master/docs/volcano_integration.md)
   - [PaddlePaddle](https://github.com/volcano-sh/volcano/tree/master/example/integrations/paddlepaddle)
