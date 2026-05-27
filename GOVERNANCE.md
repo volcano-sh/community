@@ -58,6 +58,8 @@ The __volcano__ GitHub project maintainers team reflects the list of Maintainers
 
 ## Other Projects
 
+The sub-projects of Volcano are closely related to the main project, serving as essential supplements that need to be released synchronously with the main version when necessary. Within Volcano’s sub-projects, some are for exploratory purposes while others are related to peripheral ecosystem products.
+
 The Volcano organization is open to receive new sub-projects under its umbrella. To accept a project
 into the __Volcano__ organization, it has to meet the following criteria:
 
@@ -67,6 +69,17 @@ into the __Volcano__ organization, it has to meet the following criteria:
   - External plugins
   - Other AI/BigData related processing
 - Must be supported by a Maintainer not associated or affiliated with the author(s) of the sub-projects
+- Sub-Projects can have their own repositories but follow the same governance mechanism as the main project.
+- For major governance decisions regarding sub-projects to be passed, they must receive votes from more than two-thirds of the maintainers. This includes
+  - Reviewing and deciding sub-project add to Volcano
+  - Removing sub-projects from Volcano
+  - Archiving sub-project
+  - Arbitrating inter-project disagreements
+  - Resolving issues that individual projects are unable to resolve
+  - Administering project infrastructure, intellectual property, and resources
+  - Determining overall direction for advocacy and marketing
+
+For details on how to apply for the addition, archiving and removal of sub-projects, please refer to the [sub-project lifecycle](./subproject-lifecycle.md) documentation on the Volcano community.
 
 The submission process starts as a Pull Request or Issue on the
 [volcano-sh/volcano](https://github.com/volcano-sh/volcano) repository with the required information
