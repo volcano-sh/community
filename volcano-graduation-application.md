@@ -185,7 +185,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
   - According to [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md), sub-projects can have their own repositories but follow the same governance mechanism as the main project.
-  add/remove process: https://github.com/karmada-io/community/blob/main/GOVERNANCE.md#subprojects
+  add/remove process: https://github.com/volcano-sh/community/blob/master/GOVERNANCE.md#other-projects
   
   TODO: update governance 
 
@@ -269,6 +269,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Roadmap change process is documented.**
 
 // TODO： add roadmap change process. in governance.md
+
   Roadmap changes are proposed via GitHub Issues or PRs in the main repository and require maintainer consensus per the decision-making process in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#decision-making-process).
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
@@ -334,7 +335,7 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 - [x] **Third Party Security Review.**
 
   - [x] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings.
-  
+
   Volcano has completed a third-party security audit. See: [Volcano 2025 Security Audit](https://volcano.sh/reports/Ada-Logics-Volcano-Security-Audit-2025.pdf)
 
 - [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
