@@ -125,3 +125,7 @@ Investigate to cooperate with argo to support job dependencies.
 
 ### Add stress test
 * Description: Add the stress test.
+
+## 2026 Volcano Roadmap
+
+The detailed [Volcano 2026 roadmap](https://docs.google.com/document/d/1KFWDXnp9lJ2cQdYW-KhpaHuTETOabI7C0pPNf00C_0k/edit?tab=t.0) is maintained and will be updated continuously.

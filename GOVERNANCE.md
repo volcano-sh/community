@@ -17,44 +17,54 @@ Every one carries water...
 Making a community work requires input/effort from everyone. Maintainers should actively
 participate in Pull Request reviews. Maintainers are expected to respond to assigned Pull Requests
 in a *reasonable* time frame, either providing insights, or assign the Pull Requests to other
-maintainers.
+Maintainers.
 
 Every Maintainer is listed in the
-[MAINTAINERS](https://github.com/volcano-sh/volcano/blob/master/MAINTAINERS.md)
+[MAINTAINS](https://github.com/volcano-sh/volcano/blob/master/MAINTAINS.md)
 file, with their Github handle.
 
 ## Becoming a Maintainer
 
-Please see the requirement [here](community-membership.md#maintainer)
+Please see the requirement [here](community-membership.md#Maintainer)
 
 ## Changes in Maintainership
 
 If a Maintainer feels she/he can not fulfill the "Expectations from Maintainers", they are free to
 step down.
 
-The Volcano organization will never forcefully remove a current Maintainer, unless a maintainer
+The Volcano organization will never forcefully remove a current Maintainer, unless a Maintainer
 fails to meet the principles of Volcano community,
 or adhere to the [Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
 
 ## Decision making process
 
-Decisions are build on consensus between maintainers.
+Decisions are build on consensus between Maintainers.
 Proposals and ideas can either be submitted for agreement via a github issue or PR.
 
-In general, we prefer that technical issues and maintainer membership are amicably worked out between the persons involved.
-If a dispute cannot be decided independently, get a third-party maintainer (e.g. a mutual contact with some background
+In general, we prefer that technical issues and Maintainer membership are amicably worked out between the persons involved.
+If a dispute cannot be decided independently, get a third-party Maintainer (e.g. a mutual contact with some background
 on the issue, but not involved in the conflict) to intercede.
 If a dispute still cannot be decided, the project lead has the final say to decide an issue.
 
 Decision making process should be transparent to adhere to
 the principles of Volcano project.
 
-All proposals, ideas, and decisions by maintainers or the project lead
+All proposals, ideas, and decisions by Maintainers or the project lead
 should either be part of a github issue or PR.
+
+### Volcano Roadmap
+
+The [Volcano Roadmap](./roadmap.md) contains a high-level view of all major deliverables across the whole project. This roadmap view is built from the information and status contained in specific GitHub projects across Volcano. This consolidated view, managed by the Maintainers, helps community members and adopters understand the project's direction and when to expect key deliverables.
+
+At the start of each year, Volcano collects requirements and updates the annual roadmap. This includes sub-projects, all presented in a single document. Current and potential roadmap items are evaluated by Maintainers, in collaboration with all sub-projects, on an ongoing basis, and collectively reviewed at the Community Regular Meeting.
+
+Each sub-project roadmap is managed independently by the sub-project leads, who is responsible for keeping the project details up to date. Project leads may use any other GitHub project features like short descriptions, milestones, etc. to manage individual projects.
+
+This mechanism allows for a centralized roadmap view while letting individual project teams manage their work and status independently in their own projects.
 
 ## Github Project Administration
 
-The __volcano__ GitHub project maintainers team reflects the list of Maintainers.
+The __volcano__ GitHub project Maintainers team reflects the list of Maintainers.
 
 ## Other Projects
 
@@ -89,10 +99,10 @@ of Volcano__.
 ## Volcano and CNCF
 
 Volcano is a CNCF project. As such, Volcano might be involved in CNCF (or other CNCF projects) related
-marketing, events, or activities. Any maintainer could help driving the Volcano involvement, as long as
+marketing, events, or activities. Any Maintainer could help driving the Volcano involvement, as long as
 create a GitHub Pull Request to call for participation
-from other maintainers. The `Call for Participation` should be kept open for no less than a week if time
-permits, or a _reasonable_ time frame to allow maintainers to have a chance to volunteer.
+from other Maintainers. The `Call for Participation` should be kept open for no less than a week if time
+permits, or a _reasonable_ time frame to allow Maintainers to have a chance to volunteer.
 
 ## Code of Conduct
 
