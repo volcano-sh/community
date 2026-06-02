@@ -109,7 +109,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   - Maintainer list is up to date in [MAINTAINERS.md](https://github.com/volcano-sh/community/blob/main/MAINTAINERS.md)
   - Community meetings are held regularly and announced via [community repo](https://github.com/volcano-sh/community#community-meeting)
-  - PRs and issues are used to propose and approve all governance changes transparently TODO: add pr links when the new update to governance is made
+  - PRs and issues are used to propose and approve all governance changes transparently https://github.com/volcano-sh/community/pull/139
 
 - [x] **Governance clearly documents [vendor-neutrality](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
@@ -121,12 +121,12 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Document how the project makes decisions on leadership roles, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
   - Decisions use consensus-based model documented in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#decision-making-process)
-  - Contribution acceptance follows PR review process with required LGTM from maintainers/approvers
+  - Contribution acceptance follows PR review process with required LGTM/APPROVE from reviewers/approvers
   - Leadership changes require sponsorship and consensus per [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md)
 
 - [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
-
-  - Security response: the Security Team is defined in [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md) and consists of all current maintainers plus members of the private `volcano-security` Google Group
+TODO(hzxuzhonghu): check the security team
+  - Security response: the Security Team is defined in [SECURITY.md](https://github.com/volcano-sh/community/blob/master/SECURITY.md) and consists of all current maintainers plus members of the private `volcano-security` Google Group
   - Role assignment for Member/Approver/Maintainer follows the documented ladder in [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md)
 
 - [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
@@ -186,8 +186,6 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   - According to [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md), sub-projects can have their own repositories but follow the same governance mechanism as the main project.
   add/remove process: https://github.com/volcano-sh/community/blob/master/GOVERNANCE.md#other-projects
-  
-  TODO: update governance 
 
 ## Contributors and Community
 
@@ -197,7 +195,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Contributor ladder with multiple roles for contributors.**
 
-  Volcano has a three-level contributor ladder: Member → Approver → Maintainer, each with documented requirements, responsibilities, and privileges. See [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md).
+  Volcano has a four-level contributor ladder: Member → Reviewer → Approver → Maintainer, each with documented requirements, responsibilities, and privileges. See [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md).
 
 ### Required
 
@@ -227,7 +225,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
-  Community meetings are held biweekly across three time zones (Asia, Europe) and documented in the [community repository](https://github.com/volcano-sh/community#community-meeting).
+  Community meetings are held biweekly across three time zones (Asia, Europe, Pacific) and documented in the [community repository](https://github.com/volcano-sh/community#community-meeting).
   - [Meeting notes and agenda](https://docs.google.com/document/d/1YLbF8zjZBiR9PbXQPB22iuc_L0Oui5A1lddVfRnZrqs/edit)
   - [Meeting Calendar](https://calendar.google.com/calendar/b/1/embed?src=volcano.sh.bot@gmail.com) | [Subscribe](https://calendar.google.com/calendar/b/1?cid=dm9sY2Fuby5zaC5ib3RAZ21haWwuY29t)
 
@@ -258,19 +256,18 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - **Advanced scheduling algorithms**: backfill, preemption, binpack, and topology-aware scheduling for GPU clusters
   - **Multi-framework support**: native integrations with 15+ frameworks including Spark, Flink, Ray, PyTorch, TensorFlow, MPI, PaddlePaddle, MindSpore, Cromwell, Argo, and more
 
-  Cloud native use cases: LLM training, distributed ML inference, genomics/bioinformatics, big data analytics, HPC workloads on Kubernetes.
+  Cloud native use cases: LLM training, distributed ML inference, genomics/bioinformatics, big data analytics, HPC workloads on Kubernetes. 
 
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
-
-// TODO update roadmap
-  Project roadmap is maintained at: https://github.com/volcano-sh/community/blob/main/roadmap.md  
-  Release milestones and feature planning are tracked via GitHub Milestones: https://github.com/volcano-sh/volcano/milestones
+  - We maintain several different roadmap documenmts, and are in the process of consolidating them with Github Project Board.
+    - [2026 Roadmap](https://github.com/volcano-sh/volcano/issues/5035) is documented in google doc: https://docs.google.com/document/d/1KFWDXnp9lJ2cQdYW-KhpaHuTETOabI7C0pPNf00C_0k/edit?tab=t.0#heading=h.oijxltczbn1i, public to comment.
+    - Release milestones and feature planning are tracked via GitHub Milestones: https://github.com/volcano-sh/volcano/milestones and Github Project Board: https://github.com/orgs/volcano-sh/projects/3
+    - Previous roadmap is maintained at: https://github.com/volcano-sh/community/blob/main/roadmap.md  
 
 - [x] **Roadmap change process is documented.**
 
-// TODO： add roadmap change process. in governance.md
-
-  Roadmap changes are proposed via GitHub Issues or PRs in the main repository and require maintainer consensus per the decision-making process in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#decision-making-process).
+  - Volcano uses github issues and prs to propose feature request, https://github.com/volcano-sh/volcano/tree/master/docs/design
+  - Sub-projects have their own way to track feature changes, like [Kthena](https://github.com/volcano-sh/kthena/tree/main/docs/proposal)
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
   - A General Technical Review was completed/updated on <!-- TODO: add date -->, and can be discovered at <!-- TODO: add link -->.
@@ -370,10 +367,11 @@ N/A
 
   CNCF project integrations:
   - [Argo Workflows](https://github.com/volcano-sh/volcano/tree/master/example/integrations/argo) – Workflow orchestration
-  - [KubeRay](https://docs.ray.io/en/master/cluster/kubernetes/k8s-ecosystem/volcano.html) – Ray cluster scheduling on Kubernetes
   - [Kubeflow Training Operator](https://www.kubeflow.org/docs/components/training/user-guides/job-scheduling/) – Distributed ML training
+  - [LeaderWorkerSet](https://github.com/kubernetes-sigs/lws/tree/main/keps/407-gang-scheduling) - LLM orchestration & scheduling
 
   Non-CNCF project integrations:
+  - [KubeRay](https://docs.ray.io/en/master/cluster/kubernetes/k8s-ecosystem/volcano.html) – Ray cluster scheduling on Kubernetes
   - [Apache Spark](https://spark.apache.org/docs/latest/running-on-kubernetes.html#using-volcano-as-customized-scheduler-for-spark-on-kubernetes) – Native built-in support since Spark 3.3
   - [Spark Operator](https://www.kubeflow.org/docs/components/spark-operator/user-guide/volcano-integration/)
   - [Apache Flink](https://github.com/GoogleCloudPlatform/flink-on-k8s-operator/blob/master/docs/volcano_integration.md)
@@ -391,7 +389,7 @@ February 2023
 
 ##### Adopter 2 - Xiaohongshu (RED) / Internet
 
-Xiaohongshu uses Volcano for content recommendation engine workloads. See: [How Does Volcano Empower a Content Recommendation Engine in Xiaohongshu](https://volcano.sh/en/blog/xiaohongshu-en/)  
+Xiaohongshu uses Volcano for content recommendation engine workloads. See: [How Does Volcano Empower a Content Recommendation Engine in Xiaohongshu](https://volcano.sh/blog/xiaohongshu-en/)  
 <!-- TODO: confirm date -->
 
 ##### Adopter 3 - Amazon Web Services (AWS) / Cloud
@@ -406,10 +404,10 @@ Azure Machine Learning extension for AKS supports Volcano as the scheduler for t
 
 ##### Adopter 5 - iQIYI / Internet / Media
 
-iQIYI uses Volcano for cloud-native migration of AI training and media processing workloads. See: [iQIYI: Volcano-based Cloud Native Migration Practices](https://volcano.sh/en/blog/aiqiyi-en/)  
+iQIYI uses Volcano for cloud-native migration of AI training and media processing workloads. See: [iQIYI: Volcano-based Cloud Native Migration Practices](https://volcano.sh/blog/aiqiyi-en/)  
 <!-- TODO: confirm date -->
 
 ##### Adopter 6 - Ruitian / Finance / HPC
 
-Ruitian uses Volcano for large-scale offline HPC jobs. See: [How Ruitian Used Volcano to Run Large-Scale Offline HPC Jobs](https://volcano.sh/en/blog/ruitian-en/)  
+Ruitian uses Volcano for large-scale offline HPC jobs. See: [How Ruitian Used Volcano to Run Large-Scale Offline HPC Jobs](https://volcano.sh/blog/ruitian-en)  
 <!-- TODO: confirm date -->
