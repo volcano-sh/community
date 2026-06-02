@@ -19,7 +19,7 @@ Reference revisions used while preparing this document:
 
 Volcano fills a gap in the Kubernetes ecosystem for batch, AI/ML, big data, HPC, genomics, and other high-performance workloads that require coordinated startup, resource queues, topology-aware scheduling, device-aware scheduling, and tenant-aware sharing policies. Kubernetes provides the extensibility points that make this possible, while Volcano contributes a scheduler, controller manager, admission webhook, command-line tooling, and Kubernetes Custom Resource Definitions (CRDs) for jobs, queues, and pod groups.
 
-Volcano is designed to be Kubernetes-native. Users can run native Pods and Kubernetes workloads with `schedulerName: volcano`, or submit higher-level `VolcanoJob` resources. Volcano integrates with frameworks including Spark, Flink, Ray, TensorFlow, PyTorch, Argo Workflows, MindSpore, PaddlePaddle, OpenMPI, Horovod, MXNet, Kubeflow Training Operator, KubeGene, and Cromwell. Public adoption includes Internet/Cloud, finance, manufacturing, medical, and cloud-provider use cases.
+Volcano is designed to be Kubernetes-native. Users can run native Pods and Kubernetes workloads with `schedulerName: volcano`, or submit higher-level Volcano `Job` resources. Volcano integrates with frameworks including Spark, Flink, Ray, TensorFlow, PyTorch, Argo Workflows, MindSpore, PaddlePaddle, OpenMPI, Horovod, MXNet, Kubeflow Training Operator, KubeGene, and Cromwell. Public adoption includes Internet/Cloud, finance, manufacturing, medical, and cloud-provider use cases.
 
 ## Day 0 - Planning Phase
 
@@ -34,7 +34,7 @@ The project uses the following planning mechanisms:
 - **Requirement collection:** Before a release, requirements are collected from community feedback, common user scenarios, GitHub issues, design proposals, and maintainer input.
 - **Community review:** Requirements are discussed in public community meetings and reviewed for scenario value, design feasibility, implementation cost, and alignment with Volcano's scope.
 - **Milestone and roadmap tracking:** Release milestones, roadmap issues, GitHub project boards, and design documents track work from proposal to implementation.
-- **Maintainer mapping:** Members, reviewers, approvers, maintainers, and owners have documented responsibilities. Maintainers participate in release planning and feature maintenance; owners help drive the overall technical roadmap.
+- **Maintainer mapping:** Members, reviewers, approvers, and maintainers have documented responsibilities. Maintainers participate in release planning and feature maintenance; owners help drive the overall technical roadmap.
 - **Subproject scope:** The Volcano organization accepts related subprojects through the process documented in governance and [subproject-creation.md](https://github.com/volcano-sh/community/blob/00ccf774aa4309cf45da50729ae6e2ce688ed53f/subproject-creation.md).
 
 #### Describe the target persona or user(s) for the project?
@@ -68,7 +68,6 @@ Additional supported use cases include:
 - Genomics and bioinformatics workflows such as KubeGene and Cromwell.
 - Shared enterprise clusters that require tenant-aware resource governance.
 - Online/offline workload colocation and descheduling through related Volcano subprojects and integrations.
-- Multi-cluster scheduling through the `volcano-global` subproject.
 
 #### Explain which use cases have been identified as unsupported by the project.
 
@@ -298,7 +297,7 @@ Important defaults include:
 - Components are installed into the `volcano-system` namespace by default.
 - The scheduler name is `volcano`.
 - If a `VolcanoJob` omits `schedulerName`, Volcano documentation states that `volcano` is selected by default.
-- The default scheduler configuration includes actions such as `enqueue`, `allocate`, and `backfill`, and plugin tiers such as `priority`, `gang`, `conformance`, `drf`, `predicates`, `proportion`, `nodeorder`, and `binpack`.
+- The default scheduler configuration includes the actions `enqueue`, `allocate`, and `backfill`, and two plugin tiers: the first tier with `priority`, `gang`, and `conformance`; and the second tier with `overcommit`, `drf`, `predicates`, `proportion`, `nodeorder`, and `binpack`.
 - A default queue is created when Volcano starts. Workloads that do not specify a queue are assigned to the `default` queue.
 - A root queue is created for hierarchical queue support.
 - Queue `reclaimable` defaults to `true`.
@@ -871,7 +870,7 @@ Important SLIs include:
 | Job scheduling latency | `volcano_e2e_job_scheduling_latency_milliseconds` / `volcano_e2e_job_scheduling_duration` | Measures job startup scheduling time |
 | Action/plugin latency | `volcano_action_scheduling_latency_milliseconds`, `volcano_plugin_scheduling_latency_milliseconds` | Identifies scheduler bottlenecks |
 | Task stage latency | `volcano_task_scheduling_latency_milliseconds` | Measures predicate/scoring/bind stages |
-| Unscheduled workload count | `volcano_unschedule_task_count`, `volcano_unschedule_job_counts` | Indicates scheduling failures or resource scarcity |
+| Unscheduled workload count | `volcano_unschedule_task_count`, `volcano_unschedule_job_count` | Indicates scheduling failures or resource scarcity |
 | Queue resource state | queue allocated/request/deserved/capacity metrics | Indicates tenant resource health |
 | Queue workload state | queue PodGroup pending/inqueue/running/unknown metrics | Indicates queue backlog and progression |
 | Admission health | webhook errors/timeouts and Kubernetes API metrics | Indicates admission bottlenecks |
