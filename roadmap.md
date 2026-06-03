@@ -1,131 +1,97 @@
-# Volcano Roadmap
+# Volcano 2026 Roadmap
 
-## v1.0 (Planned on June 30)
+See also [Volcano Technical Roadmap for 2026 and Beyond](https://docs.google.com/presentation/d/1B0zdtqaCKEoh3jKNDNqekJPOOO84K8Ni/edit?slide=id.p1#slide=id.p1) for technical stack view.
 
-The major target of this release to make Volcano more stable for product.
+With the rapid growth of large models and Cloud Native AI, Kthena (inference) and agentCube (agent) joined the Volcano community in 2025. In 2026 we will deliberately expand AI-related capabilities while maintaining existing features' stability and backward compatibility.
 
-### Stability and Resilience
+## Volcano Scheduler
 
-Improve test coverage. In v1.0, more test cases will be added to improve Volcano stability for product.
+1. Pluggable Sharding Controller Strategy
+   - Define standardized policy interfaces and extension points for sharding controllers.
+   - Enable pluggable implementations so the community can contribute custom sharding strategies while preserving testability and compatibility.
+2. Agent Scheduler (evolution + stability)
+   - Current advances: predicates and nodeOrder are supported.
+   - Microservice scheduling migrated from session model to Agent Scheduler framework.
+   - Roadmap: progressively open additional plugin points.
+   - Stability plan: isolate immature logic via feature-gate, and prioritize code quality improvements, unit/e2e coverage, and robust regression testing before enabling by default.
+3. Training scenarios (AI training & elasticity)
+   - Optimize job-level preemption and rebalancing both within and across queues for better fairness and responsiveness.
+   - Provide elastic scheduling for distributed training (e.g., PyTorch Elastic / Gang scheduling).
+   - Align training and inference resources toward unified pools, offering two operational modes: pure preemptive and scheduled preemptive to fit diverse workload requirements.
+4. Big data scenarios
+   - Improve scheduling for batch and streaming big-data workloads and resource-aware integration with common big-data frameworks.
+   - Solicit concrete community use-cases and contributions to refine policies and operator integrations.
 
-### Preemption/Reclaim Enhancement
+## Kthena
 
-Preemption and Reclaim are two import features for resource sharing; there're two actions for now, but unstable. In v1.0, those two features are going to be enhanced for elastic workload, e.g. stream job, bigdata batch job.
+1. Workloads
+   - Support for additional inference engines
+     - Current runtime supports VLLM only. Phased support for additional inference engines (beginning with SGLang) will be added.
+   - LeaderWorkerSet (LWS) migration support
+     - LWS is widely deployed in production. Provide a clear migration path and tooling so existing LWS deployments can transition to Kthena ModelServing with minimal disruption.
+2. Router
+   - Open architecture and ecosystem integration
+     - Adopt open, composable APIs (e.g., GIE, gateway-api-inference-extension) to enable multi-engine and multi-vendor integrations. Initial engine support: VLLM and SGLang.
+   - Traffic scheduling algorithms
+   - Implement session-affinity and pluggable traffic scheduling policies. Community input on additional algorithms and trade-offs is welcome.
+3. AutoScaler
 
-### GPU Share ([#624](https://github.com/volcano-sh/volcano/issues/624))
+    Native HPA is pod-metric centric and insufficient when multiple pods form the minimum serving unit. Kthena AutoScaler supports independent scaling at group and role granularity.
 
-A better performance has its cost, including GPU; and there are several scenarios that a Pod can not consume one GPU, e.g. inference workload, dev environment. One of solutions is to support GPU share, including related enhancement to both scheduler and kubelet.
+   - Group and role-level scaling
+   - Planned capabilities
+     - Compact multi-dimensional scaling across hyperNode, node, servingGroup, and role levels.
+     - Dynamic generation of configurations to meet user SLAs.
+     - Research feasibility of dynamic PD ratio approaches (research discussion and experiments encouraged).
+4. Further priorities
+   - Fault rapid-recovery: combine Gang scheduling with network-topology awareness to enable fast intra-ServingGroup/Role pod migration.
+   - Observability: define and export key component metrics (community input needed on metric priorities).
+   - Fast start/stop: work with vllm and sglang communities to optimize cold-start and shutdown paths.
 
-### Integrate with Apache Flink
+## AgentCube
 
-Flink is a widely used for Stateful Computations over Data Streams, but flink on kubernetes has some gaps now.
+1. Support for multiple agent frameworks
+   - Provide first-class integrations with mature agent frameworks to enable diverse developer ecosystems: LangChain, AutoGen, CrewAI, LLamaIndex, Dify, Verl.
+   - Expose pluggable adapters so contributors can add or optimize framework-specific behaviors.
+2. AgentCube Router evolution
+   - Current: basic routing.
+   - Planned: authentication and authorization, tenant-level quota and concurrency controls, session persistence, and WebSocket support to enable secure, multi-tenant, low-latency agent workflows.
+3. Picod expansion
+   - Python support available now; plan to add Jupyter support for interactive workloads.
+   - Evaluate additional language runtimes based on community business scenarios and demand.
+4. SDK and runtime capabilities
+   - Existing: CodeInterpreter and agentRuntime support create and invoke.
+   - Roadmap: add active sandbox suspension, fast wake-up, and fault-tolerant recovery.
+   - Expand SDK surface and language bindings across releases following semantic versioning.
+5. AgentCube workloads and CRD strategy
+   - Current: basic adaptations for agentRuntime and CodeInterpreter; need to identify richer workload requirements and real-world use cases (MCP tools, BrowserUse, MobileUse, etc.).
+   - The agent-sandbox CRD is used today; the long-term core API is under community discussion, and feedback is welcome.
+   - Improve warm-pool and session management (global warm-pool to reduce resident resource fragmentation, idle-time policies, and dynamic session recovery).
 
-### Integrate with argo to support job dependencies
+## Resource Management
 
-Investigate to cooperate with argo to support job dependencies.
+As computer hardware diversifies, Volcano will broaden support for heterogeneous accelerators to meet evolving industry demands. In 2026 we plan to add native support for Ascend, Metax, and Cambricon, and extend unified resource management across multiple GPU generations and vendor platforms. This work enables consistent discovery, accounting, and scheduling of industry compute resources, reducing fragmentation for mixed-hardware clusters.
 
-### Support running MindSpore jobs
+Key capabilities:
 
-[MindSpore](https://www.mindspore.cn/) is a deep learning training and inference framework, support running MindSpore training with volcano job.
+- Multi-vendor device support: drivers, device plugins, and CRD mappings for Ascend, Metax, Cambricon, and additional accelerators.
+- Unified resource model: consistent APIs and allocation semantics across device generations and vendors to simplify scheduling and tenancy.
+- Topology-aware scheduling: integrate network- and topology-awareness (e.g., NUMA, NIC/GPU locality, fabric links) to optimize placement and cross-node traffic for distributed AI workloads.
+- Interoperability and extensibility: pluggable adapters and metrics exporters to enable vendor integrations and community-contributed optimizations.
 
-## v1.2(Planned on Oct 23,2020)
-### Queue Resource Reservation
-* Description: Support reserve specified resource for queue without restart Volcano.
-* Priority: High
-* Issue: https://github.com/volcano-sh/volcano/issues/1101
-* Owner: @hudson741@Thor-wl
+## Ecosystem Integration
 
-### Fair Scheduling For Jobs Of Same Priority And Different Queue
-* Description: Schedule jobs of same priority but from different queue accord to create time.
-* Priority: High
-* Issue: https://github.com/volcano-sh/volcano/issues/1098
-* Owner: @alcorj-mizar
+- Volcano Scheduler
+  - Native support for Ascend, Metax, and Cambricon (including native device plugin, DRA driver, etc.).
+  - Separate the HyperNode controller, promote the HyperNode API as a first-class citizen in the Kubernetes community, and establish an initiative for HyperNode.
+  - Integrate network-topology-aware scheduling capabilities (including support for subgroup granularity) into more communities.
+  - Support the Karmada scheduler hypernode estimator, providing network-topology-aware scheduling capabilities in multi-scheduler scenarios.
+- Kthena
+  - ModelServing supports LeaderWorkerSet, llm-d, and aibrix for existing users.
+  - ModelServing supports MoonCake and LMCache. A user guide is currently available; next step is exploring best practices for deploying role support with kv-cache and publishing an updated guide.
+  - Router supports diverse APIs such as GIR and gateway-api-inference-extension.
+- AgentCube
+  - Provide first-class integrations with mature agent frameworks to enable diverse developer ecosystems: LangChain, AutoGen, CrewAI, LLamaIndex, Dify, Verl.
+  - Support Agent-sandbox. At this stage, agentCube uses agent-sandbox as its workload API. If agentCube transitions to its own API in the future, keep support for the agent-sandbox API.
+  - Support additional programming languages, such as Jupyter and TypeScript.
 
-### Differentiated Scheduling Strategies For Different Queue
-* Description: Support configure actions and plugins for different queues.
-* Priority: High
-* Issue: https://github.com/volcano-sh/volcano/issues/1035
-* Owner: @sresthas
-
-### Support Hierarchy Queue
-* Description: Support Hierarchy Queue algorithm.
-* Priority: High
-* Issue: https://github.com/volcano-sh/volcano/issues/1033
-* Owner: @My-pleasure
-
-### Job PriorityClassName Update
-* Description: Support update vcjob priorityClassName update when job has not been scheduled.
-* Priority: Middle
-* Issue: https://github.com/volcano-sh/volcano/issues/1097
-* Owner: @merryzhou
-
-### Status Message Enhanced For CRD
-* Description: Provide more status detail for CRD status when use CLI such job fail reason.
-* Priority: Middle
-* Issue: https://github.com/volcano-sh/volcano/issues/1094
-* Owner:@mikechengwei
-
-### Support MinAvailable For Task
-* Description: Support MinAvailable for task
-* Priority: Middle
-* Issue: https://github.com/volcano-sh/volcano/issues/988
-* Owner: @shinytang6
-
-## v1.3(Planned on March 12, 2021)
-### Task-Topology
-* Description: Support task topology scheduling
-* Priority: High
-* Issue: https://github.com/volcano-sh/volcano/issues/1349
-
-### Support multiple scheduler
-* Description: Support multiple scheduler by admission controller.
-* Priority: High
-* Issue: https://github.com/volcano-sh/volcano/issues/1322
-* Owner: @Thor-wl @zen-xu
-
-### Stability and Resilience
-* Description: Improve the UT/E2E test coverage and add the stress test to improve stability.
-* Priority: High
-* Issue: https://github.com/volcano-sh/volcano/issues/1284
-* Owner: @rudeigerc
-
-### Volcano Device Plugin enhancement
-* Description: Support container using multiples GPU as well as part of GPU card.
-* Priority: High
-* Issue: https://github.com/volcano-sh/devices/issues/12
-* Owner: @peiniliu
-
-### Queue Resource Reservation
-* Description: Support reserve specified resource for queue without restart Volcano.
-* Priority: Medium
-* Issue: https://github.com/volcano-sh/volcano/issues/1101
-* Owner: @Thor-wl @hudson741
-
-## v1.4 and later (To be updated)
-### Support Hierarchy Queue
-* Description: Support Hierarchy Queue algorithm.
-* Issue: https://github.com/volcano-sh/volcano/issues/1033
-
-### Support configuration hot update
-* Description: Add hot update for Volcano components arguments.
-* Issue: https://github.com/volcano-sh/volcano/issues/1326
-
-### Improve resource calculation accuracy
-* Description: Support high accurate resource calculation.
-* Issue: https://github.com/volcano-sh/volcano/issues/1196
-
-### Support job backfill
-* Description: Add backfill functionality to improve the resource utilization.
-
-### Improve the Autoscaling enficiency
-* Description: Combine the Autoscaler and scheduler to improve the scaling efficiency.
-
-### Add fine-grained monitor metrics
-* Description: Enhance monitor to add more metrics for jobs, queues, etc.
-
-### Add stress test
-* Description: Add the stress test.
-
-## 2026 Volcano Roadmap
-
-The detailed [Volcano 2026 roadmap](https://docs.google.com/document/d/1KFWDXnp9lJ2cQdYW-KhpaHuTETOabI7C0pPNf00C_0k/edit?tab=t.0) is maintained and will be updated continuously.
