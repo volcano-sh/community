@@ -10,7 +10,7 @@ This document gives a brief overview of the Volcano community roles with the req
 | [Member](#member) | Sponsor from 2 approvers, active in community, contributed to Volcano | Welcome and guide new contributors | Volcano GitHub organization Member |
 | [Reivewer](#reviewer) | Sponsor from 2 maintainers, has basic experience and knowledge of domain, actively contributed to code and review | Review contributions from community members | Write access to specific packages in relevant repository |
 | [Approver](#approver) | Sponsor from 2 maintainers, has good experience and knowledge of domain, actively contributed to code and review  | Review and approve contributions from community members | Write access to specific packages in relevant repository |
-| [Maintainer](#maintainer) | Sponsor from 2 owners, shown good technical judgement in feature design/development and PR review | Participate in release planning and feature development/maintenance | Top level write access to relevant repository. Name entry in Maintainers file of the repository |
+| [Maintainer](#maintainer) | Sponsor from 2 maintainers, shown good technical judgement in feature design/development and PR review | Participate in release planning and feature development/maintenance | Top level write access to relevant repository. Name entry in Maintainers file of the repository |
 
 **Note :** It is mandatory for all Volcano community members to follow Volcano [Code of Conduct](./code_of_conduct.md).
 
@@ -106,6 +106,26 @@ Has overall knowledge of the project and features in the project.
 - Name entry in Maintainers file of the repository
 - Participate & Drive design/development of multiple features
 
+## Inactive members
+
+_Members are continuously active contributors in the community._
+
+A core principle in maintaining a healthy community is encouraging active participation. It is inevitable that people's focuses will change over time and they are not expected to be actively contributing forever.
+
+However, serving as a maintainer or approver for one of the Volcano GitHub organizations comes with an elevated set of permissions. These capabilities should not be used by those that are not familiar with the current state of the Volcano project.
+
+Therefore Maintainers or Approver who is extended period away from the project with no activity will be removed from the Volcano Github Organizations and will be required to go through the org membership process again after re-familiarizing themselves with the current state.
+
+### How inactivity is measured
+
+Inactive members are defined as members of one of the Volcano Organizations with **no** contributions across any organization within 18 months. This is measured by the CNCF [DevStats project].
+
+**Note:** Devstats does not take into account non-code contributions. If a non-code contributing member is accidentally removed this way, they may open an issue to quickly be re-instated.
+
+After an extended period away from the project with no activity those members would need to re-familiarize themselves with the current state before being able to contribute effectively.
+
+
 **Note :** These roles are applicable only for Volcano github organization and repositories. Currently Volcano doesn't have a formal process for review and acceptance into these roles. We will come-up with a process soon.
 
 [two-factor authentication]: https://help.github.com/articles/about-two-factor-authentication
+[Devstats project]: https://volcano.devstats.cncf.io/
