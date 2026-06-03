@@ -37,7 +37,7 @@ If you have any question, feel free to reach out to us in the following ways:
 
 [Twitter](https://twitter.com/volcano_sh)
 
-## Contribute
+## Contributing
 
 The [Contributor Guide](./contribute.md) provides detailed instruction on how to get your ideas and bug fixes seen and accepted, including:
 
