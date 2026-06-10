@@ -191,7 +191,7 @@ Optional integrations:
 
 #### Describe how the project implements Identity and Access Management.
 
-Volcano itself is a scheduling platform, not providing its own apiserver, relies on Kubernetes to store its own api objects. So all the identity and access management is handled by Kubernetes:
+Volcano itself is a scheduling platform that does not provide its own API server and relies on Kubernetes to store its API objects. Therefore, all identity and access management is handled by Kubernetes:
 
 - Users access Volcano resources(Job/Queue/PodGroup) through the Kubernetes API server, which applies the cluster's configured authentication and authorization stack.
 - Admission webhook access is protected by Kubernetes service and TLS mechanisms.
@@ -271,7 +271,7 @@ Important defaults include:
 
 Production deployments should consider:
 
-- In large-scale cluster, administrators can adjust kube-api-qps and kube-api-burst for volcano scheduler, controller-manager, and other components.
+- In a large-scale cluster, administrators can adjust kube-api-qps and kube-api-burst for the Volcano scheduler, controller-manager, and other components.
 - Pinning a release version rather than installing from `master`.
 - Setting component resource requests and limits based on cluster scale.
 - Configuring scheduler actions and plugin tiers for the target workload profile.
@@ -371,7 +371,7 @@ The project should not recommend loosening security in production. For developme
 
 - Run a local development installation with `./hack/local-up-volcano.sh`.
 - Adjust any admission fail policy from `fail` to `ignore`.
-- Generally volcano does not require priviledge. But when it comes to support colocation, `volcano-agent` component need some elevated permissions, which can be set via helm args.
+- Generally Volcano does not require privilege. But when it comes to supporting colocation, the `volcano-agent` component needs some elevated permissions, which can be set via Helm args.
 
 #### Security Hygiene
 
@@ -480,7 +480,7 @@ Note: if both default kube-scheduler and volcano scheduler are used simultaneous
 
 #### Describe how the project tests enablement and disablement.
 
-Volcano uses CI workflows to run a suite of e2e tests before PR merged https://github.com/volcano-sh/volcano/tree/master/.github/workflows, which covers job management scheduling and other core functionalities.
+Volcano uses CI workflows to run a suite of e2e tests before a PR is merged (see https://github.com/volcano-sh/volcano/tree/master/.github/workflows), which covers job management, scheduling, and other core functionalities.
 
 #### How does the project clean up any resources created, including CRDs?
 
@@ -514,7 +514,7 @@ Rollout or rollback can fail due to:
 
 - Kubernetes version incompatibility.
 - CRD schema/version mismatch.
-- In-compatibility when some configuration api does not support forward compatibility.
+- Incompatibility when some configuration API does not support forward compatibility.
 - Misconfigured scheduler actions/plugins.
 
 Already running pods generally continue running. Impact is primarily to new scheduling, job lifecycle reconciliation, queue updates, admission of new or updated resources, and framework submissions during the failure.
@@ -588,7 +588,7 @@ Useful SLIs include:
 
 #### Describe any operations that will increase in time covered by existing SLIs/SLOs.
 
-The operations most likely to see increased latency under existing SLIs/SLOs are scheduling. In general, these operations become slower as the number of workloads objects increases.
+The operations most likely to see increased latency under existing SLIs/SLOs are scheduling. In general, these operations become slower as the number of workload objects increases.
 
 #### Describe the increase in resource usage in any components as a result of enabling this project, to include CPU, Memory, Storage, Throughput.
 
