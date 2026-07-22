@@ -1,0 +1,395 @@
+# Review Project Moving Level Evaluation
+- [x] I have reviewed the TOC's [moving level readiness triage guide](https://github.com/cncf/toc/blob/main/operations/dd-toc-guide.md#initial-triageevaluation-prior-to-assignment), ensured the criteria for my project are met before opening this issue, and understand that unmet criteria will result in the project's application being closed.
+
+# Volcano Graduation Application
+v1.6
+This template provides the project with a framework to inform the TOC of their conformance to the Graduation Level Criteria.
+
+Project Repo(s): https://github.com/volcano-sh/volcano  
+Project Site: https://volcano.sh/  
+Sub-Projects: https://github.com/volcano-sh/community, https://github.com/volcano-sh/website, https://github.com/volcano-sh/charts, https://github.com/volcano-sh/kthena, https://github.com/volcano-sh/agentcube
+Communication: https://cloud-native.slack.com/archives/C011GJDQS0N (#volcano on CNCF Slack)
+
+Project points of contacts: Jesse Stutler, chenzicong4@huawei.com; ZhonghuXu, zhhxu2011@gmail.com
+
+- [ ] (Post Graduation only) [Book a meeting with CNCF staff](http://project-meetings.cncf.io) to understand project benefits and event resources.
+
+## Graduation Criteria Summary for Volcano
+
+### Application Level Assertion
+
+- [x] This project is currently Incubating, accepted on 2022-04-19, and applying to Graduate.
+
+### Adoption Assertion
+
+_The project has been adopted by the following organizations in a testing and integration or production capacity:_
+
+## Application Process Principles
+
+### Suggested
+
+- [ ] **Engage with domain-specific TAG(s) to present the technical architecture of the project.**
+  - This is tracked by <!-- TODO: add TAG Workloads/Runtime tracking issue link -->.
+
+<!-- Volcano has presented at multiple KubeCon events and engages with TAG Workloads (formerly TAG App Delivery/Runtime). A General Technical Review with the relevant TAG should be scheduled or confirmed. -->
+
+### Required
+
+- [x] **Complete a [General Technical Review (GTR)](https://github.com/cncf/toc/blob/main/toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
+  - This was most recently revised on <!-- TODO: add date -->, and can be discovered at https://github.com/volcano-sh/community/blob/master/cncf_process/general_technical_review.md.
+
+- [x] **Complete a [Governance Review](https://github.com/cncf/toc/blob/main/toc_subprojects/project-reviews-subproject/governance-review-template.md).**
+  - This was most recently revised on 2026-06-17, and can be discovered at https://github.com/volcano-sh/community/blob/master/cncf_process/governance_review.md.
+
+- [x] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
+
+  - Homepage: https://volcano.sh/ (community-branded and managed)
+  - GitHub Organization: https://github.com/volcano-sh/ (all repos under the neutral `volcano-sh` org)
+  - Slack: [#volcano](https://cloud-native.slack.com/archives/C011GJDQS0N) on CNCF Slack
+  - Mailing list: https://groups.google.com/g/volcano-sh
+  - Community meetings are open and announced via the [community repo](https://github.com/volcano-sh/community#community-meeting)
+  - [Governance documentation](https://github.com/volcano-sh/community/blob/master/GOVERNANCE.md) explicitly states that no single vendor can dominate project direction; maintainers represent NVIDIA, Huawei, Baidu, and Hjmicro
+
+- [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**
+  - [x] Met during Project's Sandbox application on Apr 2020 and subsequent move to incubating in 2021/08/30 through PR [#712](https://github.com/cncf/toc/pull/712)
+
+<!-- Volcano has been compliant with CNCF expectations since joining as a Sandbox project and has grown steadily to meet incubation and graduation criteria. -->
+
+- [ ] **Due Diligence Review.**
+
+  Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisfies the Due Diligence Review criteria.
+
+- [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
+
+  - [Installation Documentation](https://volcano.sh/en/docs/installation/): covers Helm chart, YAML manifest, and operator-based deployments
+  - [User Guide](https://volcano.sh/en/docs/): introduces architecture, main features, and API reference
+  - [Tutorials](https://volcano.sh/en/docs/): step-by-step guides for Spark, Ray, PyTorch, TensorFlow, MPI, and more
+  - [Example integrations](https://github.com/volcano-sh/volcano/tree/master/example/integrations): working samples for 15+ frameworks
+  - [Contributing Guide](https://github.com/volcano-sh/volcano/blob/master/contribute.md): contributor onboarding and workflow documentation
+
+## Governance and Maintainers
+
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
+
+### Suggested
+
+- [x] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+
+  Examples of governance evolution:
+  - Initial governance established at Sandbox entry (Apr 2020)
+  - Community membership ladder formalized with Member, Reviewer, Approver, Maintainer roles: [community-membership.md](https://github.com/volcano-sh/community/blob/master/community-membership.md), recent change https://github.com/volcano-sh/community/pull/134/
+  - Security response team and private disclosure process formalized in [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md) and recent update in [PR](https://github.com/volcano-sh/community/pull/97)
+  - Emeritus process for inactive maintainers added and exercised (see [PR](https://github.com/volcano-sh/community/pull/79))
+  - Subproject acceptance criteria documented in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/master/GOVERNANCE.md#other-projects), recently updated from [PR](https://github.com/volcano-sh/community/pull/139)
+
+### Required
+
+- [x] **Clear and discoverable project governance documentation.**
+
+  Governance documentation: https://github.com/volcano-sh/community/blob/master/GOVERNANCE.md  
+
+- [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
+
+  - Maintainer list is up to date in [MAINTAINERS.md](https://github.com/volcano-sh/community/blob/main/MAINTAINERS.md)
+  - Community meetings are held regularly and announced via [community repo](https://github.com/volcano-sh/community#community-meeting)
+  - PRs and issues are used to propose and approve all governance changes transparently https://github.com/volcano-sh/community/pull/139
+
+- [x] **Governance clearly documents [vendor-neutrality](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
+
+  The [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/master/GOVERNANCE.md) states that:
+  - Decision making is consensus-based and transparent
+  - All proposals, ideas, and decisions happen via public GitHub issues or PRs
+  - Maintainers currently represent 4 different companies (NVIDIA, Huawei, Baidu, Hjmicro), preventing single-vendor dominance
+
+- [x] **Document how the project makes decisions on leadership roles, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
+
+  - Decisions use consensus-based model documented in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#decision-making-process)
+  - Contribution acceptance follows PR review process with required LGTM/APPROVE from reviewers/approvers
+  - Leadership changes require sponsorship and consensus per [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md)
+
+- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
+  - Security response: the Security Team is defined in [SECURITY.md](https://github.com/volcano-sh/community/blob/master/SECURITY.md) and consists of all current maintainers plus members of the private `volcano-security` Google Group
+  - Role assignment for Member/Approver/Maintainer follows the documented ladder in [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md)
+
+- [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
+
+  - Full lifecycle documented in [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md) (requirements, responsibilities, and privileges for each role)
+  - Offboarding: maintainers who can no longer fulfill expectations may step down; the project will not forcefully remove maintainers unless they violate project principles or the Code of Conduct ([GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#changes-in-maintainership))
+  - Emeritus status: documented and actively used (see [MAINTAINERS.md](https://github.com/volcano-sh/community/blob/main/MAINTAINERS.md#emeritus))
+
+- [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
+
+  - New maintainers have been added as the project grew (e.g., Xavier Chang from NVIDIA https://github.com/volcano-sh/community/issues/78)
+  - Former maintainers (Quinton Hoole/Facebook, Animesh Singh/IBM, Jun Gong/Tencent) transitioned to Emeritus status, demonstrating healthy lifecycle management. https://github.com/volcano-sh/community/blob/master/MAINTAINERS.md#emeritus
+
+- [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
+
+  - The [maintainer's list](https://github.com/volcano-sh/community/blob/main/MAINTAINERS.md) on our website draws from GitHub and documents all members and their roles.
+
+- [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
+
+  Volcano has 8 active maintainers across multiple organizations. The project has 5,700+ GitHub stars, 1,400+ forks, and hundreds of contributors across code, docs, and reviews. We also have approvers for each subproject. This maintainer and approver count is appropriate for the project's scope and activity level.
+
+- [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
+
+  Current [maintainers](https://github.com/volcano-sh/community/blob/main/MAINTAINERS.md) represent 4 independent organizations: NVIDIA, Huawei, Baidu, and Hjmicro. No single organization holds a majority (NVIDIA: 3, Huawei: 3, Baidu: 1, Hjmicro: 1).
+
+- [x] **Code and Doc ownership in GitHub and elsewhere matches documented governance roles.**
+
+  - GitHub organization ownership and team permissions reflect the documented maintainer list
+  - OWNERS files are used across the repository to scope approver and reviewer roles to relevant packages
+
+- [x] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
+
+  - Volcano explicitly adopts the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md) as documented in [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#code-of-conduct) and [CODE_OF_CONDUCT.md](https://github.com/volcano-sh/community/blob/master/CODE_OF_CONDUCT.md)
+
+- [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
+
+  - Code of Conduct is referenced in the [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md#code-of-conduct).
+
+- [x] **All subprojects, if any, are listed.**
+
+  Subprojects under the `volcano-sh` organization:
+  - [kthena](https://github.com/volcano-sh/kthena) – Kubernetes-native AI serving platform for scalable model serving
+  - [agentcube](https://github.com/volcano-sh/agentcube) – Agent orchestration platform
+  - [volcano-global](https://github.com/volcano-sh/volcano-global) – Federation scheduler for multi-cluster
+  - [apis](https://github.com/volcano-sh/apis) – API (CRD) definitions for Volcano
+  - [devices](https://github.com/volcano-sh/devices) – Device plugins for Volcano (e.g. GPU)
+  - [dashboard](https://github.com/volcano-sh/dashboard) – Web dashboard for Volcano
+  - [descheduler](https://github.com/volcano-sh/descheduler) – Volcano Descheduler
+  - [resource-exporter](https://github.com/volcano-sh/resource-exporter) – Resource exporter for NUMA-aware scheduling
+  - [helm-charts](https://github.com/volcano-sh/helm-charts) – Helm chart repository
+  - [website](https://github.com/volcano-sh/website) – Project website and documentation
+  - [community](https://github.com/volcano-sh/community) – Community governance and documentation
+  - [kubegene](https://github.com/volcano-sh/kubegene) – Gene sequencing workflow engine on Kubernetes
+  - [kubegene-website](https://github.com/volcano-sh/kubegene-website) – KubeGene website
+
+- [x] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
+
+  - According to [GOVERNANCE.md](https://github.com/volcano-sh/community/blob/main/GOVERNANCE.md), sub-projects can have their own repositories but follow the same governance mechanism as the main project.
+  add/remove process: https://github.com/volcano-sh/community/blob/master/GOVERNANCE.md#other-projects
+
+## Contributors and Community
+
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
+
+### Suggested
+
+- [x] **Contributor ladder with multiple roles for contributors.**
+
+  Volcano has a four-level contributor ladder: Member → Reviewer → Approver → Maintainer, each with documented requirements, responsibilities, and privileges. See [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md).
+
+### Required
+
+- [x] **Clearly defined and discoverable process to submit issues or changes.**
+
+  - Issues: filed via GitHub Issues at https://github.com/volcano-sh/volcano/issues
+  - Changes: submitted via Pull Requests following the workflow in [contribute.md](https://github.com/volcano-sh/volcano/blob/master/contribute.md)
+
+- [x] **Project must have, and document, at least one public communications channel for users and/or contributors.**
+  Volcano has the following public communications channel for users and contributors documented in the [Readme.md](https://github.com/volcano-sh/volcano#meeting)
+  - CNCF Slack: [#volcano](https://cloud-native.slack.com/archives/C011GJDQS0N)
+  - Mailing list: [volcano-sh Google Group](https://groups.google.com/forum/#!forum/volcano-sh)
+  - Twitter: [@volcano_sh](https://twitter.com/volcano_sh)
+
+- [x] **List and document all project communication channels, including subprojects (mail list/slack/etc.). List any non-public communications channels and what their special purpose is.**
+
+  Public channels (documented in [volcano README](https://github.com/volcano-sh/volcano#contact) and [community README](https://github.com/volcano-sh/community#contact)):
+  - Slack: [#volcano](https://cloud-native.slack.com/archives/C011GJDQS0N) on CNCF Slack ([join](https://slack.cncf.io/))
+  - Mailing list: [volcano-sh Google Group](https://groups.google.com/forum/#!forum/volcano-sh)
+  - Twitter: [@volcano_sh](https://twitter.com/volcano_sh)
+  - GitHub Issues: https://github.com/volcano-sh/volcano/issues
+  - Community meetings: [meeting info](https://github.com/volcano-sh/volcano#meeting) | [meeting notes and agenda](https://docs.google.com/document/d/1YLbF8zjZBiR9PbXQPB22iuc_L0Oui5A1lddVfRnZrqs/edit) | [Zoom link](https://zoom.us/j/91804791393)
+
+  Private channels (purpose: security):
+  - [volcano-security@googlegroups.com](mailto:volcano-security@googlegroups.com) – private security vulnerability reporting and coordination (PST members only). Ref: [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md)
+  - [volcano-distributors-announce@lists.cncf.io](mailto:volcano-distributors-announce@lists.cncf.io) – private advance notification to distributors for security patches. Ref: [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md)
+
+- [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
+
+  Community meetings are held biweekly across three time zones (Asia, Europe, Pacific) and documented in the [community repository](https://github.com/volcano-sh/community#community-meeting).
+  - [Meeting notes and agenda](https://docs.google.com/document/d/1YLbF8zjZBiR9PbXQPB22iuc_L0Oui5A1lddVfRnZrqs/edit)
+  - [Meeting Calendar](https://calendar.google.com/calendar/b/1/embed?src=volcano.sh.bot@gmail.com) | [Subscribe](https://calendar.google.com/calendar/b/1?cid=dm9sY2Fuby5zaC5ib3RAZ21haWwuY29t)
+
+- [x] **Documentation of how to contribute, with increasing detail as the project matures.**
+
+  - [contribute.md](https://github.com/volcano-sh/volcano/blob/master/contribute.md) provides detailed contribution guidelines.
+  - [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md) – Role progression for ongoing contributors.
+
+- [x] **Demonstrate contributor activity and recruitment.**
+
+  - Active community with 471+ contributors on Volcano, 5.8k+ GitHub stars (at the time of this writing), 1.5k members in wechat and 780 members in Slack. There is continuous PR activity and community engagement.
+
+    [LFX Insights](https://insights.linuxfoundation.org/project/Volcano?timeRange=past365days&start=2025-05-26&end=2026-05-26)
+
+## Engineering Principles
+
+- [x] **Document project goals and objectives that illustrate the project's differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+  - _If applicable_ a General Technical Review was completed/updated on <!-- TODO: add date -->, and can be discovered at <!-- TODO: add link -->.
+
+  Volcano fills a critical gap in the Kubernetes ecosystem: the native kube-scheduler lacks support for batch, HPC, and AI/ML workloads that require gang scheduling, queue management, fair-share scheduling, and topology-aware placement. Volcano provides these capabilities natively, enabling frameworks like Spark, Ray, TensorFlow, and PyTorch to run efficiently on Kubernetes. More detail: https://volcano.sh/en/docs/
+
+- [x] **Document what the project does, and why it does it - including viable cloud native use cases.**
+  - _If applicable_ a General Technical Review was completed/updated on <!-- TODO: add date -->, and can be discovered at <!-- TODO: add link -->.
+
+  Volcano is a Kubernetes-native batch scheduling system. It extends and enhances the standard kube-scheduler with:
+  - **Gang scheduling**: ensures all pods in a job start together or not at all, critical for distributed training
+  - **Queue management**: hierarchical, fair-share resource allocation across tenants and teams
+  - **Advanced scheduling algorithms**: backfill, preemption, binpack, and topology-aware scheduling for GPU clusters
+  - **Multi-framework support**: native integrations with 15+ frameworks including Spark, Flink, Ray, PyTorch, TensorFlow, MPI, PaddlePaddle, MindSpore, Cromwell, Argo, and more
+
+  Cloud native use cases: LLM training, distributed ML inference, genomics/bioinformatics, big data analytics, HPC workloads on Kubernetes. 
+
+- [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
+  - We maintain several different roadmap documenmts, and are in the process of consolidating them with Github Project Board.
+    - [2026 Roadmap](https://github.com/volcano-sh/volcano/issues/5035) is documented in google doc: https://docs.google.com/document/d/1KFWDXnp9lJ2cQdYW-KhpaHuTETOabI7C0pPNf00C_0k/edit?tab=t.0#heading=h.oijxltczbn1i, public to comment.
+    - Roadmap is maintained at: https://github.com/volcano-sh/community/blob/main/roadmap.md  
+    - Release milestones and feature planning are tracked via GitHub Milestones: https://github.com/volcano-sh/volcano/milestones and Github Project Board: https://github.com/orgs/volcano-sh/projects/3
+
+- [x] **Roadmap change process is documented.**
+
+  - Volcano uses github issues and prs to propose feature request, https://github.com/volcano-sh/volcano/tree/master/docs/design
+  - Sub-projects have their own way to track feature changes, like [Kthena](https://github.com/volcano-sh/kthena/tree/main/docs/proposal)
+
+- [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+  - A General Technical Review was completed/updated on <!-- TODO: add date -->, and can be discovered at https://github.com/volcano-sh/community/blob/master/cncf_process/general_technical_review.md.
+
+  Architecture documentation:
+  - [Architecture overview](https://volcano.sh/en/docs/): covers the Volcano scheduler, controller manager, admission webhook, and CRDs (Job, Queue, PodGroup)
+  - Architecture diagram: https://github.com/volcano-sh/volcano/blob/master/docs/images/volcano-architecture.png
+  - Design proposals: https://github.com/volcano-sh/volcano/tree/master/docs/design
+
+- [x] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:**
+
+  - [x] Release expectations (scheduled or based on feature implementation)
+  - [x] Tagging as stable, unstable, and security related releases
+  - [x] Information on branch and tag strategies
+  - [x] Branch and platform support and length of support
+  - [x] Artifacts included in the release.
+
+  Release process: <!-- TODO: add link to RELEASES.md or release documentation -->  
+  The project publishes releases to GitHub Releases (https://github.com/volcano-sh/volcano/releases) and container images to Docker Hub. Security releases follow the process defined in [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md).
+
+- [x] **History of regular, quality releases.**
+
+  Volcano maintains a consistent release cadence:
+  - v1.15.0 (2026-06-01)
+  - v1.14.1 (2026-02-14), v1.14.0 (2026-01-31)
+  - v1.13.2 (2026-03-30), v1.13.1 (2025-12-23)
+  - Multiple patch releases for each minor version demonstrating active maintenance
+  - Full release history: https://github.com/volcano-sh/volcano/releases
+
+## Security
+
+Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
+
+### Suggested
+
+- [x] **Achieving OpenSSF Best Practices silver or gold badge.**
+
+  Volcano has achieved the **OpenSSF Best Practices passing badge**: https://bestpractices.coreinfrastructure.org/projects/3012  
+  <!-- TODO: confirm current badge level (passing/silver/gold) -->
+
+### Required
+
+- [x] **Clearly defined and discoverable process to report security issues.**
+
+  Security vulnerabilities are reported privately to [volcano-security@googlegroups.com](mailto:volcano-security@googlegroups.com). The full process is documented in [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/SECURITY.md).
+
+- [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
+
+  - Two-factor authentication (2FA) is required for all Volcano GitHub organization members (documented in [community-membership.md](https://github.com/volcano-sh/community/blob/main/community-membership.md#member))
+  - Branch protection rules are enforced on the main branch (required PR reviews, status checks)
+  - OWNERS files enforce PR approval ACLs via Prow/bots
+
+- [x] **Document assignment of security response roles and how reports are handled.**
+
+  The [SECURITY.md](https://github.com/volcano-sh/volcano/blob/master/security-team/access-control.md) documents our response roles, charter, and processes.
+
+- [x] **Document [Security Self-Assessment](https://tag-security.cncf.io/community/assessments/guide/self-assessment/).**
+
+  <!-- TODO: link to completed security self-assessment if available, or indicate it is in progress -->
+  - see https://github.com/volcano-sh/volcano/blob/master/security-team/assessments/self-assessment.md
+
+- [x] **Third Party Security Review.**
+
+  - [x] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings.
+
+  Volcano has completed a third-party security audit. See: [Volcano 2025 Security Audit](https://volcano.sh/reports/Ada-Logics-Volcano-Security-Audit-2025.pdf)
+
+- [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
+
+  Volcano holds the OpenSSF CII Best Practices passing badge: https://bestpractices.coreinfrastructure.org/projects/3012  
+  OpenSSF Scorecard: https://scorecard.dev/viewer/?uri=github.com/volcano-sh/volcano
+
+## Ecosystem
+
+### Suggested
+
+N/A
+
+### Required
+
+- [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
+
+  Adopters list: https://github.com/volcano-sh/community/blob/main/adopters.md  
+  The list includes organizations across Internet/Cloud, Finance, Manufacturing, and Medical sectors globally.
+
+- [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters (these are not required to be in the publicly documented list of adopters)**
+
+  Volcano is used in production by dozens of organizations. Notable independent adopters include ING Bank, Xiaohongshu, iQIYI, Ruitian, Baidu, and others. Cloud providers including AWS (EMR on EKS) and Microsoft (Azure ML) integrate Volcano as an option in their managed services.
+
+- [ ] **TOC verification of adopters.**
+
+  <!-- The project will provide the TOC with a list of adopters for private verification, confirming production use. -->
+
+  Refer to the Adoption portion of this document.
+
+- [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
+
+  CNCF project integrations:
+  - [Argo Workflows](https://github.com/volcano-sh/volcano/tree/master/example/integrations/argo) – Workflow orchestration
+  - [Kubeflow Training Operator](https://www.kubeflow.org/docs/components/training/user-guides/job-scheduling/) – Distributed ML training
+  - [LeaderWorkerSet](https://github.com/kubernetes-sigs/lws/tree/main/keps/407-gang-scheduling) - LLM orchestration & scheduling
+
+  Non-CNCF project integrations:
+  - [KubeRay](https://docs.ray.io/en/master/cluster/kubernetes/k8s-ecosystem/volcano.html) – Ray cluster scheduling on Kubernetes
+  - [Apache Spark](https://spark.apache.org/docs/latest/running-on-kubernetes.html#using-volcano-as-customized-scheduler-for-spark-on-kubernetes) – Native built-in support since Spark 3.3
+  - [Spark Operator](https://www.kubeflow.org/docs/components/spark-operator/user-guide/volcano-integration/)
+  - [Apache Flink](https://github.com/GoogleCloudPlatform/flink-on-k8s-operator/blob/master/docs/volcano_integration.md)
+  - [PaddlePaddle](https://github.com/volcano-sh/volcano/tree/master/example/integrations/paddlepaddle)
+  - [MindSpore](https://github.com/volcano-sh/volcano/tree/master/example/MindSpore-example)
+  - [Cromwell](https://github.com/broadinstitute/cromwell/blob/develop/docs/backends/Volcano.md) (bioinformatics)
+  - PyTorch, TensorFlow, MPI, Horovod, MXNet, KubeGene, and more
+
+#### Adoption
+
+##### Adopter 1 - ING Bank / Finance
+
+ING Bank uses Volcano to power its big data analytics platform on Kubernetes. See: [CNCF Blog – ING Bank: How Volcano empowers its big data analytics platform](https://www.cncf.io/blog/2023/02/21/ing-bank-how-volcano-empowers-its-big-data-analytics-platform/)  
+February 2023
+
+##### Adopter 2 - Xiaohongshu (RED) / Internet
+
+Xiaohongshu uses Volcano for content recommendation engine workloads. See: [How Does Volcano Empower a Content Recommendation Engine in Xiaohongshu](https://volcano.sh/blog/xiaohongshu-en/)  
+<!-- TODO: confirm date -->
+
+##### Adopter 3 - Amazon Web Services (AWS) / Cloud
+
+AWS integrates Volcano as the batch scheduler for Amazon EMR on EKS. See: [AWS EMR on EKS – Using Volcano as a custom scheduler](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/tutorial-volcano.html)  
+<!-- TODO: confirm date of general availability -->
+
+##### Adopter 4 - Microsoft Azure / Cloud
+
+Azure Machine Learning extension for AKS supports Volcano as the scheduler for training workloads. See: [Deploy Azure Machine Learning extension on AKS](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-kubernetes-extension)  
+<!-- TODO: confirm date -->
+
+##### Adopter 5 - iQIYI / Internet / Media
+
+iQIYI uses Volcano for cloud-native migration of AI training and media processing workloads. See: [iQIYI: Volcano-based Cloud Native Migration Practices](https://volcano.sh/blog/aiqiyi-en/)  
+<!-- TODO: confirm date -->
+
+##### Adopter 6 - Ruitian / Finance / HPC
+
+Ruitian uses Volcano for large-scale offline HPC jobs. See: [How Ruitian Used Volcano to Run Large-Scale Offline HPC Jobs](https://volcano.sh/blog/ruitian-en)  
+<!-- TODO: confirm date -->
