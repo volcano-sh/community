@@ -528,7 +528,7 @@ See [license-lint](https://github.com/volcano-sh/volcano/tree/master/config/lice
 
 ### Expectations 
 
-License compliance matters are the responsibility of the [PST](https://github.com/volcano-sh/community/blob/master/PST.md) team. They should be responsible for license selection, review and compliance risk avoidance. They should take corresponding responsibilities to ensure that the licenses introduced by the community comply with open source compliance specifications, and make timely corrections when there are compliance risks. For example, for contagious licenses such as GPL licenses, relevant open source obligations should be fully fulfilled in open source software compliance projects,  SBOM and source code should be provided in projects, and they should also consider alternative license options to avoid  legal risks .Characters who do not comply with the above behavior can be removed and re-elected.
+License compliance matters are handled by the community maintainers and compliance reviewers listed above, with security-sensitive compliance risks coordinated with the [Security Team](https://github.com/volcano-sh/community/blob/master/security-team/security-groups.md#the-security-team) when needed. They should be responsible for license selection, review and compliance risk avoidance. They should take corresponding responsibilities to ensure that the licenses introduced by the community comply with open source compliance specifications, and make timely corrections when there are compliance risks. For example, for contagious licenses such as GPL licenses, relevant open source obligations should be fully fulfilled in open source software compliance projects, SBOM and source code should be provided in projects, and they should also consider alternative license options to avoid legal risks. Contributors who do not comply with the above behavior can be removed and re-elected.
 
 ## Contact
 
@@ -537,4 +537,3 @@ If you have any questions about open source license compliance, please contact u
 [Volcano Slack Channel](https://cloud-native.slack.com/archives/C011GJDQS0N) | [Join](https://slack.cncf.io/)
 
 [Mailing List](https://groups.google.com/forum/#!forum/volcano-sh)
-
