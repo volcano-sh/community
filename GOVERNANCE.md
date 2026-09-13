@@ -20,7 +20,7 @@ in a *reasonable* time frame, either providing insights, or assign the Pull Requ
 maintainers.
 
 Every Maintainer is listed in the
-[MAINTAINERS](https://github.com/volcano-sh/volcano/blob/master/MAINTAINERS.md)
+[MAINTAINERS](./MAINTAINERS.md)
 file, with their Github handle.
 
 ## Becoming a Maintainer
@@ -44,19 +44,51 @@ Proposals and ideas can either be submitted for agreement via a github issue or 
 In general, we prefer that technical issues and maintainer membership are amicably worked out between the persons involved.
 If a dispute cannot be decided independently, get a third-party maintainer (e.g. a mutual contact with some background
 on the issue, but not involved in the conflict) to intercede.
-If a dispute still cannot be decided, the project lead has the final say to decide an issue.
+If the dispute remains unresolved, a final decision will be made by a vote of the maintainers
 
 Decision making process should be transparent to adhere to
 the principles of Volcano project.
 
-All proposals, ideas, and decisions by maintainers or the project lead
-should either be part of a github issue or PR.
+All proposals, ideas, and decisions by maintainers should be part of a github issue or PR.
+
+### Volcano Roadmap
+
+The [Volcano Roadmap](./roadmap.md) contains a high-level view of all major deliverables across the whole project. This roadmap view is built from the information and status contained in specific GitHub projects across Volcano. This consolidated view, managed by the Maintainers, helps community members and adopters understand the project's direction and when to expect key deliverables.
+
+At the start of each year, Volcano collects requirements and updates the annual roadmap. Volcano community collects requirements through a variety of channels, like issues slack channels, other media, etc. Current and potential roadmap items are evaluated by Maintainers, in collaboration with all sub-projects, on an ongoing basis, and collectively reviewed at the Community Regular Meeting.
+
+Each sub-project roadmap is managed independently by the sub-project leads, who is responsible for keeping the project details up to date. Project leads may use any other GitHub project features like short descriptions, milestones, etc. to manage individual projects.
+
+This mechanism allows for a centralized roadmap view while letting individual project teams manage their work and status independently in their own projects.
+
+#### Roadmap Change Process
+
+To keep the roadmap accurate and transparent, all roadmap changes should follow this process:
+
+- Proposal
+  - Any Volcano community member may propose a roadmap change by opening an issue or pull request to discuss.
+  - Volcano maintainers should review whether the proposal aligns with project goals, current priorities, and available resources.
+  - If needed, maintainers may request clarification or split large changes into smaller milestones.
+- Review and consensus
+  - Significant roadmap changes should be discussed in public channels (GitHub or Community Regular Meeting).
+  - Final decisions are made by maintainer consensus following the project decision-making process.
+- Approval and merge
+  - At least one maintainer approval is required before merge.
+  - For major cross-subproject changes, maintainers may require additional approvals from relevant sub-project maintainers.
+- Execution and status updates
+  - Owners of accepted items are responsible for keeping status current in linked issues/projects.
+  - If scope, timeline, or ownership changes, roadmap updates should be submitted promptly through a follow-up Pull Request.
+- Exception path
+  - Urgent corrections (for example, broken links, incorrect owner, or critical timeline fixes) may be fast-tracked by maintainers.
+  - Fast-tracked changes must still be recorded publicly through GitHub PR history.
 
 ## Github Project Administration
 
 The __volcano__ GitHub project maintainers team reflects the list of Maintainers.
 
 ## Other Projects
+
+The sub-projects of Volcano are closely related to the main project, serving as essential supplements that need to be released synchronously with the main version when necessary. Within Volcano’s sub-projects, some are for exploratory purposes while others are related to peripheral ecosystem products.
 
 The Volcano organization is open to receive new sub-projects under its umbrella. To accept a project
 into the __Volcano__ organization, it has to meet the following criteria:
@@ -67,6 +99,17 @@ into the __Volcano__ organization, it has to meet the following criteria:
   - External plugins
   - Other AI/BigData related processing
 - Must be supported by a Maintainer not associated or affiliated with the author(s) of the sub-projects
+- Sub-Projects can have their own repositories but follow the same governance mechanism as the main project.
+- For major governance decisions regarding sub-projects to be passed, they must receive votes from more than two-thirds of the maintainers. This includes
+  - Reviewing and deciding sub-project add to Volcano
+  - Removing sub-projects from Volcano
+  - Archiving sub-project
+  - Arbitrating inter-project disagreements
+  - Resolving issues that individual projects are unable to resolve
+  - Administering project infrastructure, intellectual property, and resources
+  - Determining overall direction for advocacy and marketing
+
+For details on how to apply for the addition, archiving and removal of sub-projects, please refer to the [sub-project lifecycle](./subproject-lifecycle.md) documentation on the Volcano community.
 
 The submission process starts as a Pull Request or Issue on the
 [volcano-sh/volcano](https://github.com/volcano-sh/volcano) repository with the required information
