@@ -8,11 +8,9 @@ This document gives a brief overview of the Volcano community roles with the req
 | Role | Requirements | Responsibilities | Privileges |
 | -----| ---------------- | ------------ | -------|
 | [Member](#member) | Sponsor from 2 approvers, active in community, contributed to Volcano | Welcome and guide new contributors | Volcano GitHub organization Member |
-| [Reivewer](#reviewer) | Sponsor from 2 maintainers, has basic experience and knowledge of domain, actively contributed to code and review | Review contributions from community members | Write access to specific packages in relevant repository |
+| [Reviewer](#reviewer) | Sponsor from 2 maintainers, has basic experience and knowledge of domain, actively contributed to code and review | Review contributions from community members | Write access to specific packages in relevant repository |
 | [Approver](#approver) | Sponsor from 2 maintainers, has good experience and knowledge of domain, actively contributed to code and review  | Review and approve contributions from community members | Write access to specific packages in relevant repository |
-| [Maintainer](#maintainer) | Sponsor from 2 owners, shown good technical judgement in feature design/development and PR review | Participate in release planning and feature development/maintenance | Top level write access to relevant repository. Name entry in Maintainers file of the repository |
-| [Owner](#owner) | Sponsor from 3 owners, helps drive the overall Volcano project | Drive the overall technical roadmap of the project and set priorities of activities in release planning | Volcano GitHub organization Admin access |
-
+| [Maintainer](#maintainer) | Sponsor from 2 maintainers, shown good technical judgement in feature design/development and PR review | Participate in release planning and feature development/maintenance | Top level write access to relevant repository. Name entry in Maintainers file of the repository |
 
 **Note :** It is mandatory for all Volcano community members to follow Volcano [Code of Conduct](./code_of_conduct.md).
 
@@ -20,7 +18,6 @@ This document gives a brief overview of the Volcano community roles with the req
 
 Members are active participants in the community who contribute by authoring PRs,
 reviewing issues/PRs or participate in community discussions on slack/mailing list.
-
 
 ### Requirements
 
@@ -32,6 +29,7 @@ reviewing issues/PRs or participate in community discussions on slack/mailing li
     - Participating in community discussions on slack/mailing list
     - Participate in Volcano community meetings
 
+**NOTE:** In addition to contributing code to the community, if you are the contact person for an adopter, you can also apply to become a Member.
 
 ### Responsibilities and privileges
 
@@ -47,14 +45,12 @@ reviewing issues/PRs or participate in community discussions on slack/mailing li
 Reviewers are active members who have basic experience and knowledge of the domain.
 They have actively participated in the issue/PR reviews and have identified relevant issues during review.
 
-
 ### Requirements
 
 - Sponsor from 2 maintainers
 - Member for at least 2 months
 - Have reviewed good number of PRs
 - Have good codebase knowledge
-
 
 ### Responsibilities and Privileges
 
@@ -68,14 +64,12 @@ They have actively participated in the issue/PR reviews and have identified rele
 Approvers are active members who have good experience and knowledge of the domain.
 They have actively participated in the issue/PR reviews and have identified relevant issues during review.
 
-
 ### Requirements
 
 - Sponsor from 2 maintainers
 - Reviewer for at least 2 months
 - Have reviewed good number of PRs
 - Have good codebase knowledge
-
 
 ### Responsibilities and Privileges
 
@@ -92,10 +86,18 @@ Has overall knowledge of the project and features in the project.
 
 ### Requirements
 
-- Sponsor from 2 owners
+- Deep understanding of the technical goals and direction of the project.
+- Deep understanding of the project's technical domain, architecture, and operational context.
 - Approver for at least 2 months
-- Nominated by a project owner
-- Good technical judgement in feature design/development
+- Sustained and substantive contributions to the project's technical direction and community, demonstrated through a combination of:
+  - Authoring or reviewing proposals and designs
+  - Initiating, contributing to, or resolving technical discussions (e.g. emails, GitHub issues, meetings)
+  - Identifying subtle or complex issues in designs and implementation PRs
+  - Contributing to implementation, testing, release, operations, security, documentation, or mentoring
+- Nominated by a Maintainer and passing a super-majority(two-thirds / 66.66%) vote by all current Maintainers.
+  - The nomination must include evidence addressing the requirements above.
+  - Voting remains open for at least seven calendar days. A Maintainer who does not vote is not counted as supporting the nomination.
+  - The nomination issue records the eligible electorate, votes, and final decision.
 
 ### Responsibilities and privileges
 
@@ -109,32 +111,31 @@ Has overall knowledge of the project and features in the project.
 - Name entry in Maintainers file of the repository
 - Participate & Drive design/development of multiple features
 
-## Owner
+## Inactive members
 
-Owners are maintainers who have helped drive the overall project direction.
-Has deep understanding of Volcano and related domain and facilitates major agreement in release planning
+_Members are continuously active contributors in the community._
 
-### Requirements
+A core principle in maintaining a healthy community is encouraging active participation. It is inevitable that people's focuses will change over time and they are not expected to be actively contributing forever.
 
-- Sponsor from 3 owners
-- Maintainer for at least 2 months
-- Nominated by a project owner
-- Not opposed by any project owner
-- Helped in driving the overall project
+However, serving as a maintainer, approver or reviewer for one of the Volcano GitHub organizations comes with an elevated set of permissions. These capabilities should not be used by those that are not familiar with the current state of the Volcano project.
 
-### Responsibilities and Privileges
+Therefore, members who have been away from the project for an extended period with no activity may have their community role and associated repository permissions reviewed and adjusted following the process below.
 
-- Make technical decisions for the overall project
-- Drive the overall technical roadmap of the project
-- Set priorities of activities in release planning
-- Guide and mentor all other community members
-- Ensure all community members are following Code of Conduct
-- Although given admin access to all repositories, make sure all PRs are properly reviewed and merged
-- May get admin access to relevant repository based on requirement
-- Participate & Drive design/development of multiple features
+### How inactivity is measured
+
+Potential inactivity is identified when a member has no recorded contributions across any Volcano organization within 18 months, based on CNCF [DevStats project] and [LFX Insight].
+
+**Note:** Devstats does not take into account non-code contributions. If a non-code contributing member is accidentally removed this way, they may open an issue to quickly be re-instated.
+
+**Note:** DevStats and LFX Insight may not capture all non-code contributions, it is a signal for review rather than an automatic removal trigger.
+
+Before a role or permission change, the Maintainers will notify the person and allow at least 30 days for a response or relevant evidence of non-code contribution. The Maintainers then record the decision in an issue.
+
+A returning former Reviewer, Approver or Maintainer may request reactivation after re-familiarizing themselves with the current state of the project. The Maintainers will review the person's recent contributions and grant the appropriate role and repository scope; reactivation does not automatically restore the previous role or permissions.
 
 
 **Note :** These roles are applicable only for Volcano github organization and repositories. Currently Volcano doesn't have a formal process for review and acceptance into these roles. We will come-up with a process soon.
 
-
 [two-factor authentication]: https://help.github.com/articles/about-two-factor-authentication
+[Devstats project]: https://volcano.devstats.cncf.io/
+[LFX Insight]: https://insights.linuxfoundation.org/project/Volcano
