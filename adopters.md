@@ -39,3 +39,4 @@ please feel free to add yourself into the following list by a pull request. Ther
 | [Zuoyebang](https://zuoyebang.com/) | [@ruanwenjun](https://github.com/ruanwenjun) | Production | Using Volcano to schedule Spark workloads on Kubernetes with queue management, gang scheduling, and job priorities. |
 | [Pinterest](https://www.pinterest.com/) | [@lixmgl](https://github.com/lixmgl) | Production | Using Volcano to queue, preempt, and reclaim Ray jobs on K8s. |
 | [SenseTime](https://www.sensetime.com/) | [@kingeasternsun](https://github.com/kingeasternsun) | Production | Using Volcano's gang scheduling, queue management, and HyperNode-based network topology-aware scheduling for workloads including MPI, KubeRay, and LeaderWorkerSet. |
+| [Wordfully](https://wordfully.ai/) | [@vlbaluk](https://github.com/vlbaluk) | Production | Wordfully is an AI writing assistant. We use Volcano to schedule background compute jobs and allocate resources. |
